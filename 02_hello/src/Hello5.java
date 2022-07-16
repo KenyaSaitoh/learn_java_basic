@@ -1,9 +1,9 @@
 public class Hello5 {
 
-    public static void main(String[] args) {
-
-        double d = 12345.67;
-        int x = (int) d;
-        System.out.println(x);
+    public static void main(String... args) {
+        int[] array = {1, 2, 3, 4, 5};
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(array[i]);
+        }
     }
 }
