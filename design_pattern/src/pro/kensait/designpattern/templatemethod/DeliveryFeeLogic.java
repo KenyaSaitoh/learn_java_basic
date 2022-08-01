@@ -3,21 +3,30 @@ package pro.kensait.designpattern.templatemethod;
 import java.math.BigDecimal;
 
 public abstract class DeliveryFeeLogic {
-    private int cartType;
-    private BigDecimal deliveryFee;
-    private BigDecimal deliveryFee;
+    protected ParcelType parcel;
+    protected RegionType from;
+    protected RegionType to;
+    protected CustomerType customer;
+    protected BigDecimal deliveryFee;
 
-    public abstract void open();
+    public DeliveryFeeLogic(ParcelType parcel, RegionType from, RegionType to,
+            CustomerType customer) {
+        this.parcel = parcel;
+        this.from = from;
+        this.to = to;
+        this.customer = customer;
+    }
 
-    public abstract void print();
+    public abstract void setUpBasicFee();
 
-    public abstract void close();
+    public abstract void applyRegionRule();
 
-    public final void display() {
-        open();
-        for (int i = 0; i < 5; i++) {
-            print();
-        }
-        close();
+    public abstract void applyBenefit();
+
+    public final BigDecimal calcFee() {
+        setUpBasicFee();
+        applyRegionRule();
+        applyBenefit();
+        return deliveryFee;
     }
 }

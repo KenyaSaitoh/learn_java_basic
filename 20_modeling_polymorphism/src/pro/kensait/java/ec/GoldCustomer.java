@@ -23,7 +23,7 @@ public class GoldCustomer extends AbstractCustomer implements FamilySpec<Custome
 
     @Override
     public void checkTotalPriceLimit(Integer totalPrice) throws Exception {
-        if (300000 < totalPrice) {
+        if (1000000 < totalPrice) {
             throw new Exception("限度額オーバー");
         }
     }

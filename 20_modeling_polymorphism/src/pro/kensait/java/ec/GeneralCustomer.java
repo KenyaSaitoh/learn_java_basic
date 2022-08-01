@@ -9,7 +9,7 @@ public class GeneralCustomer extends AbstractCustomer {
 
     @Override
     public void checkTotalPriceLimit(Integer totalPrice) throws Exception {
-        if (100000 < totalPrice) {
+        if (500000 < totalPrice) {
             throw new Exception("限度額オーバー");
         }
     }

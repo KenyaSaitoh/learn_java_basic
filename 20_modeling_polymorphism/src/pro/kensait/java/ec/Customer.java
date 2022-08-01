@@ -5,8 +5,8 @@ public interface Customer {
     void setId(Integer id);
     String getName();
     void setName(String name) ;
-    Integer getCustomerType();
-    void setCustomerType(Integer customerType);
+    Integer getCustomerType(); // TODO 要るかな？せめて列挙型にしよう
+    void setCustomerType(Integer customerType);  // TODO 要るかな？
     String getAddress() ;
     void setAddress(String address) ;
     Integer getPoint();

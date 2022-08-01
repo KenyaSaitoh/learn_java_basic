@@ -23,7 +23,7 @@ public class PlatinumCustomer extends AbstractCustomer implements FamilySpec<Cus
 
     @Override
     public void checkTotalPriceLimit(Integer totalPrice) throws Exception {
-        if (500000 < totalPrice) {
+        if (3000000 < totalPrice) {
             throw new Exception("限度額オーバー");
         }
     }

@@ -1,16 +1,17 @@
 package pro.kensait.designpattern.templatemethod;
 
+import java.math.BigDecimal;
+
 public class Client {
 
     public static void main(String[] args) {
 
         //
-        DeliveryFeeLogic d1 = new GoldCustomerDeliveryFeeLogic('H');
-        DeliveryFeeLogic d2 = new GeneralCustomerDeliveryFeeLogic("Hello World!");
+        DeliveryFeeLogic d1 = new CoolDeliveryFeeLogic(ParcelType.LARGE,
+                RegionType.HONSHU, RegionType.OKINAWA, CustomerType.PREMIUM);
 
         //
-        d1.display();
-        System.out.println("");
-        d2.display();
+        BigDecimal fee = d1.calcFee();
+        System.out.println(fee);
     }
 }
