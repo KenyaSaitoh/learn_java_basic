@@ -1,4 +1,4 @@
-package pro.kensait.designpattern.lesson09.specification.provider;
+package pro.kensait.designpattern.lesson09.chainofresponsibility.provider;
 
 public class User {
     private String userName;
