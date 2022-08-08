@@ -12,12 +12,12 @@ public abstract class UserSpec {
         return next;
     }
 
-    public boolean resolve(User user) {
+    public boolean handle(User user) {
         if (isSatisfiedBy(user)) {
             return true;
         } else {
             if (next != null) {
-                return next.resolve(user); // returnを忘れないこと！
+                return next.handle(user); // returnを忘れないこと！
             }
         }
         return false;
