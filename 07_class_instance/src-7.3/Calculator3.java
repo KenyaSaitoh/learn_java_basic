@@ -1,8 +1,8 @@
-class StatefulCalculator {
+class Calculator3 {
     int x;
     int y;
 
-    public StatefulCalculator(int x, int y) {
+    public Calculator3(int x, int y) {
         this.x = x;
         this.y = y;
     }

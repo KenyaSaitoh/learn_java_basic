@@ -1,4 +1,4 @@
-class Calculator2 {
+class Calculator4 {
 
     int add(int x, int y) {
         int result = x + y;

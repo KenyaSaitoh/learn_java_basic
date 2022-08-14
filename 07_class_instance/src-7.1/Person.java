@@ -4,6 +4,9 @@ class Person {
     int age;
 
     // コンストラクタ
+    Person() {
+    }
+
     Person(String name, int age) {
         this.name = name;
         this.age = age;
