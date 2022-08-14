@@ -1,5 +1,5 @@
 class ElectionService {
-    boolean canRunForElection(Person person) {
+    boolean canRunForElection(Person2 person) {
         if (25 <= person.age && person.equals("JAPAN")) {
             return true;
         }

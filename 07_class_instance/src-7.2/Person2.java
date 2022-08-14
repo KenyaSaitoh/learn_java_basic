@@ -1,15 +1,15 @@
-class Person {
+class Person2 {
     String name;
     int age;
     String nationality;
 
-    Person() {};
+    Person2() {};
 
-    Person(String name) {
+    Person2(String name) {
         this.name = name;
     }
 
-    Person(String name, int age, String nationality) {
+    Person2(String name, int age, String nationality) {
         this.name = name;
         this.age = age;
         this.nationality = nationality;
