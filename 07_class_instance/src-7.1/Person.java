@@ -14,6 +14,7 @@ class Person {
 
     // メソッド
     void greet() {
-        System.out.println("こんにちは！私は" + name + "、" + age + "歳です。");
+        String message = "こんにちは！私は" + name + "、" + age + "歳です。";
+        System.out.println(message);
     }
 }
