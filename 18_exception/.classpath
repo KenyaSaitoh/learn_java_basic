@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="src-19.1"/>
-	<classpathentry kind="src" path="src-19.2"/>
-	<classpathentry kind="src" path="src-19.3"/>
-	<classpathentry kind="src" path="src-19.4"/>
+	<classpathentry kind="src" path="src-15.1"/>
+	<classpathentry kind="src" path="src-15.2"/>
+	<classpathentry kind="src" path="src-15.3"/>
+	<classpathentry kind="src" path="src-15.4"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
 		<attributes>
 			<attribute name="module" value="true"/>
