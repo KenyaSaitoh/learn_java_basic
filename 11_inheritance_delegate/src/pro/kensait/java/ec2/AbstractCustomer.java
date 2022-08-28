@@ -2,15 +2,13 @@ package pro.kensait.java.ec2;
 
 // Customerクラスとしての共通実装を提供する
 public abstract class AbstractCustomer {
-    private int id;
-    private String name;
-    private int point;
-    private boolean active;
+    protected int id; // ID
+    protected String name; // 名前
+    protected int point; // ポイント
 
-    public AbstractCustomer(String name, int point) {
+    public AbstractCustomer(int id, String name) {
+        this.id = id;
         this.name = name;
-        this.point = point;
-        this.active = true;
     }
 
     public int getId() {
@@ -37,15 +35,9 @@ public abstract class AbstractCustomer {
         this.point = point;
     }
 
-    public boolean isActive() {
-        return active;
-    }
+    // 購入金額の上限をチェックする（抽象メソッド）
+    public abstract boolean overTotalPrice(int totalPrice);
 
-    public void setActive(boolean active) {
-        this.active = active;
-    }
-
-    public abstract boolean isLimitOver(int totalPrice);
-
-    public abstract void addPoint(int point);
+    // ポイントを加算する（抽象メソッド）
+    public abstract void addPoint(int value);
 }

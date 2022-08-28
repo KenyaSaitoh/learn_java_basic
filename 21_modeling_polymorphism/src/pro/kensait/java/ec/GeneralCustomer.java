@@ -8,15 +8,17 @@ public class GeneralCustomer extends AbstractCustomer {
         super(name, customerType, address, point);
     }
 
+    // 購入金額の上限をチェックする（オーバーライド）
     @Override
-    public void checkTotalPriceLimit(Integer totalPrice) throws Exception {
+    public void checkTotalPrice(int totalPrice) throws Exception {
         if (TOTAL_PRICE_LIMIT < totalPrice) {
             throw new Exception("限度額オーバー");
         }
     }
 
+    // ポイントを加算する（オーバーライド）
     @Override
-    public void addPoint(Integer point) {
-        setPoint(point);
+    public void addPoint(int value) {
+        this.point = this.point + value;
     }
 }

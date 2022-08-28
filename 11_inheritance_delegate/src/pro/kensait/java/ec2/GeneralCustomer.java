@@ -1,22 +1,22 @@
 package pro.kensait.java.ec2;
 
 public class GeneralCustomer extends AbstractCustomer {
-    private static final int TOTAL_PRICE_LIMIT = 500_000;
-
-    public GeneralCustomer(String name, int point) {
-        super(name, point);
+    public GeneralCustomer(int id, String name) {
+        super(id, name);
     }
 
+    // 購入金額の上限をチェックする（オーバーライド）
     @Override
-    public boolean isLimitOver(int totalPrice) {
-        if (TOTAL_PRICE_LIMIT < totalPrice) {
+    public boolean overTotalPrice(int totalPrice) {
+        if (500_000 < totalPrice) {
             return true;
         }
         return false;
     }
 
+    // ポイントを加算する（オーバーライド）
     @Override
-    public void addPoint(int point) {
-        setPoint(point);
+    public void addPoint(int value) {
+        this.point = this.point + value;
     }
 }

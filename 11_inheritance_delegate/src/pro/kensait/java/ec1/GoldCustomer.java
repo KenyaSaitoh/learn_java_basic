@@ -7,7 +7,7 @@ public class GoldCustomer extends SuperCustomer {
         super(name, point);
     }
 
-    public boolean isLimitOver(int totalPrice) {
+    public boolean checkTotalPrice(int totalPrice) {
         if (TOTAL_PRICE_LIMIT < totalPrice) {
             return true;
         }

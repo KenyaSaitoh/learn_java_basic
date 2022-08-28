@@ -1,4 +1,4 @@
-package pro.kensait.java.inheritance.case21;
+package pro.kensait.java.inheritance.case01;
 
 public class Main {
 	public static void main(String[] args) {

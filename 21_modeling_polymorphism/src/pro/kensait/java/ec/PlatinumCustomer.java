@@ -22,15 +22,17 @@ public class PlatinumCustomer extends AbstractCustomer implements FamilySpec<Cus
         this.familyList = familyList;
     }
 
+    // 購入金額の上限をチェックする（オーバーライド）
     @Override
-    public void checkTotalPriceLimit(Integer totalPrice) throws Exception {
+    public void checkTotalPrice(int totalPrice) throws Exception {
         if (TOTAL_PRICE_LIMIT < totalPrice) {
             throw new Exception("限度額オーバー");
         }
     }
 
+    // ポイントを加算する（オーバーライド）
     @Override
-    public void addPoint(Integer point) {
-        setPoint(point * 3);
+    public void addPoint(int value) {
+        this.point = this.point + value * 3;
     }
 }

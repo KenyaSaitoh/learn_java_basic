@@ -1,7 +1,7 @@
-package pro.kensait.java.inheritance.case2;
+package pro.kensait.java.inheritance.case03;
 
 public class Foo {
-    public int base = 100;
+	public int base = 100;
     private int x;
     public Foo(int x) {
         this.x = x;
@@ -9,7 +9,7 @@ public class Foo {
     public int getX() {
         return x;
     }
-    public int add() {
-        return base + x;
-    }
+	public int add() {
+		return base + x;
+	}
 }

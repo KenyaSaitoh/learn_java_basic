@@ -13,8 +13,8 @@ public interface Customer {
     void setPoint(Integer point);
     boolean isActive();
     void setActive(boolean flag);
-    void checkTotalPriceLimit(Integer totalPrice) throws Exception;
-    void addPoint(Integer point);
+    void checkTotalPrice(int totalPrice) throws Exception;
+    void addPoint(int point);
 
     // 名寄せのためのチェックメソッドなので、単純にequalsでは判定できない
     // 名前と住所が一致していたら、同じ顧客と見なす

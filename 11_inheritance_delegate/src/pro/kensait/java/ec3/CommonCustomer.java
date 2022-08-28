@@ -5,12 +5,10 @@ public class CommonCustomer {
     private int id;
     private String name;
     private int point;
-    private boolean active;
 
     public CommonCustomer(String name, int point) {
         this.name = name;
         this.point = point;
-        this.active = true;
     }
 
     public int getId() {
@@ -35,13 +33,5 @@ public class CommonCustomer {
 
     public void setPoint(int point) {
         this.point = point;
-    }
-
-    public boolean isActive() {
-        return active;
-    }
-
-    public void setActive(boolean active) {
-        this.active = active;
     }
 }

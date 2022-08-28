@@ -1,4 +1,4 @@
-package pro.kensait.java.inheritance.case1;
+package pro.kensait.java.inheritance.case01;
 
 public class Foo {
 	public int base = 100;

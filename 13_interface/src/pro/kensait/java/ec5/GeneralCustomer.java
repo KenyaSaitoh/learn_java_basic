@@ -8,7 +8,7 @@ public class GeneralCustomer extends AbstractCustomer {
     }
 
     @Override
-    public boolean isLimitOver(int totalPrice) {
+    public boolean checkTotalPrice(int totalPrice) {
         if (TOTAL_PRICE_LIMIT < totalPrice) {
             return true;
         }

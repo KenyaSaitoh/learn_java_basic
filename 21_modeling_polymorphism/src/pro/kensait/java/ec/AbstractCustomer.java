@@ -4,12 +4,12 @@ import java.util.Objects;
 
 // Customerクラスとしての共通実装を提供する
 public abstract class AbstractCustomer implements Customer {
-    private Integer id;
-    private String name;
-    private Integer customerType;
-    private String address;
-    private Integer point;
-    private boolean active;
+    protected Integer id;
+    protected String name;
+    protected Integer customerType;
+    protected String address;
+    protected Integer point;
+    protected boolean active;
 
     public AbstractCustomer(String name, Integer customerType, String address,
             Integer point) {
@@ -81,7 +81,7 @@ public abstract class AbstractCustomer implements Customer {
     }
 
     // 抽象メソッドを記述することもできるが、インタフェースに記述した方が望ましい
-    //public abstract void addPoint(Integer point);
+    //public abstract void addPoint(int value);
 
     @Override
     public int hashCode() {

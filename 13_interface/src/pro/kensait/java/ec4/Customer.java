@@ -9,7 +9,7 @@ public interface Customer {
     void setPoint(int point);
     boolean isActive();
     void setActive(boolean flag);
-    boolean isLimitOver(int totalPrice);
+    boolean checkTotalPrice(int totalPrice);
     void addPoint(int point);
 
     static Customer aggregate(Customer c1, Customer c2) {
