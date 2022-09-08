@@ -2,10 +2,11 @@ package pro.kensait.java.ec;
 
 import java.util.List;
 
-public class PlatinumCustomer extends AbstractCustomer implements FamilySpec<Customer> {
+public class PlatinumCustomer extends AbstractCustomer
+        implements NameAggregatable, FamilySpec<AbstractCustomer> {
     private static final int TOTAL_PRICE_LIMIT = 3_000_000;
 
-    private List<Customer> familyList;
+    private List<AbstractCustomer> familyList;
 
     public PlatinumCustomer(String name, Integer customerType, String address,
             Integer point) {
@@ -13,12 +14,12 @@ public class PlatinumCustomer extends AbstractCustomer implements FamilySpec<Cus
     }
 
     @Override
-    public List<Customer> getFamilyList() {
+    public List<AbstractCustomer> getFamilyList() {
         return familyList;
     }
 
     @Override
-    public void setFamilyList(List<Customer> familyList) {
+    public void setFamilyList(List<AbstractCustomer> familyList) {
         this.familyList = familyList;
     }
 

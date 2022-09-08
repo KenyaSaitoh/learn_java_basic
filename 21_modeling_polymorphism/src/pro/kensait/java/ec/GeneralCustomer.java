@@ -1,6 +1,6 @@
 package pro.kensait.java.ec;
 
-public class GeneralCustomer extends AbstractCustomer {
+public class GeneralCustomer extends AbstractCustomer implements NameAggregatable {
     private static final int TOTAL_PRICE_LIMIT = 500_000;
 
     public GeneralCustomer(String name, Integer customerType, String address,

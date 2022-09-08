@@ -3,10 +3,10 @@ package pro.kensait.java.ec;
 import java.util.Objects;
 
 // Customerクラスとしての共通実装を提供する
-public abstract class AbstractCustomer implements Customer {
+public abstract class AbstractCustomer {
     protected Integer id;
     protected String name;
-    protected Integer customerType;
+    protected Integer customerType; //TODO enum化
     protected String address;
     protected Integer point;
     protected boolean active;
@@ -20,68 +20,59 @@ public abstract class AbstractCustomer implements Customer {
         this.active = true;
     }
 
-    @Override
     public Integer getId() {
         return id;
     }
 
-    @Override
     public void setId(Integer id) {
         this.id = id;
     }
 
-    @Override
     public String getName() {
         return name;
     }
 
-    @Override
     public void setName(String name) {
         this.name = name;
     }
 
-    @Override
     public Integer getCustomerType() {
         return customerType;
     }
 
-    @Override
     public void setCustomerType(Integer customerType) {
         this.customerType = customerType;
     }
 
-    @Override
     public String getAddress() {
         return address;
     }
 
-    @Override
     public void setAddress(String address) {
         this.address = address;
     }
 
-    @Override
     public Integer getPoint() {
         return point;
     }
 
-    @Override
     public void setPoint(Integer point) {
         this.point = point;
     }
 
-    @Override
     public boolean isActive() {
         return active;
     }
 
-    @Override
     public void setActive(boolean active) {
         this.active = active;
     }
 
-    // 抽象メソッドを記述することもできるが、インタフェースに記述した方が望ましい
-    //public abstract void addPoint(int value);
+    // 購入金額の上限をチェックする（抽象メソッド）
+    public abstract void checkTotalPrice(int totalPrice) throws Exception;
+
+    // ポイントを加算する（抽象メソッド）
+    public abstract void addPoint(int value);
 
     @Override
     public int hashCode() {
