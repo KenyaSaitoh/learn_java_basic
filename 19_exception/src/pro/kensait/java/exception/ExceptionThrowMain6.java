@@ -8,11 +8,11 @@ public class ExceptionThrowMain6 {
         try {
             calc(value);
         } catch (MyException me) {
-            System.out.println("===== エラーメッセージ =====");
+            System.out.println("##### エラーメッセージ #####");
             System.out.println(me.getMessage());
-            System.out.println("===== エラーコード =====");
+            System.out.println("##### エラーコード #####");
             System.out.println(me.getErrorCode());
-            System.out.println("===== スタックトレース =====");
+            System.out.println("##### スタックトレース #####");
             me.printStackTrace();
         }
     }

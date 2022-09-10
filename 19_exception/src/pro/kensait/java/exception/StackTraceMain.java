@@ -15,7 +15,7 @@ public class StackTraceMain {
             method2();
         } catch (Exception e) {
             e.printStackTrace();
-            System.out.println("===== 例外処理終了 =====");
+            System.out.println("##### 例外処理終了 #####");
         }
     }
 
@@ -30,7 +30,7 @@ public class StackTraceMain {
 
     private void method3() throws IOException {
         try {
-            System.out.println("===== 例外発生 =====");
+            System.out.println("##### 例外発生 #####");
             throw new FileNotFoundException("最初に発生した例外");
         } catch (IOException ioe) {
             ioe.printStackTrace();

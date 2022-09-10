@@ -1,4 +1,3 @@
-
 public class Singnature {
     /*
     void fooMethod(int x) {}

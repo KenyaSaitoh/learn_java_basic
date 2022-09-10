@@ -8,7 +8,7 @@ public class ExceptionThrowMain5 {
         try {
             throw new IOException("This is Error Message!!!");
         } catch (IOException ioe) {
-            System.out.println("===== Error Message =====");
+            System.out.println("##### Error Message #####");
             System.out.println(ioe.getMessage());
         }
     }

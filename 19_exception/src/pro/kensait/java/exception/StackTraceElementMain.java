@@ -11,9 +11,9 @@ public class StackTraceElementMain {
             new StackTraceTarget().printFood(list);
         } catch (Exception e) {
             System.out.println(e.getClass().getName() + "発生!!!");
-            System.out.println("===== StackTrace =====");
+            System.out.println("##### StackTrace #####");
             e.printStackTrace();
-            System.out.println("===== StackTraceElement =====");
+            System.out.println("##### StackTraceElement #####");
             StackTraceElement[] traces = e.getStackTrace();
             for (int i = 0; i < traces.length; i++) {
                 StackTraceElement trace = traces[i];

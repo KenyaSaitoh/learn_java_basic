@@ -14,7 +14,7 @@ public class ExceptionThrowMain2 {
     }
 
     public void method(int value1) {
-        System.out.println("===== EXClass1 START =====");
+        System.out.println("##### EXClass1 START #####");
         ExceptionThrowTarget1 target1 = new ExceptionThrowTarget1();
         try {
             System.out.println("---> ExceptionThrowTarget1 CALL START");
@@ -23,7 +23,7 @@ public class ExceptionThrowMain2 {
         } catch (Exception e) {
             System.out.println("---> ExceptionThrowTarget1 RETURN ERROR!!!!!");
         }
-        System.out.println("===== ExceptionThrowMain2 END =====");
+        System.out.println("##### ExceptionThrowMain2 END #####");
     }
 }
 
@@ -31,7 +31,7 @@ public class ExceptionThrowMain2 {
 class ExceptionThrowTarget1 {
 
     public void method(int value1) throws Exception {
-        System.out.println("     ===== ExceptionThrowTarget1 START =====");
+        System.out.println("     ===== ExceptionThrowTarget1 START #####");
         ExceptionThrowTarget2 target2 = new ExceptionThrowTarget2();
         try {
             System.out.println("     ---> ExceptionThrowTarget2 CALL START");
@@ -41,7 +41,7 @@ class ExceptionThrowTarget1 {
             System.out.println("     ---> ExceptionThrowTarget2 RETURN ERROR!!!!!");
             throw e;
         }
-        System.out.println("     ===== ExceptionThrowTarget1 END =====");
+        System.out.println("     ===== ExceptionThrowTarget1 END #####");
     }
 }
 
@@ -49,7 +49,7 @@ class ExceptionThrowTarget1 {
 class ExceptionThrowTarget2 {
 
     public void method(int value1) throws Exception {
-        System.out.println("            ===== ExceptionThrowTarget2 START =====");
+        System.out.println("            ===== ExceptionThrowTarget2 START #####");
         try {
             System.out.println("            ---> ExceptionThrowTarget2 EXECUTE START");
             int value2 = 5000;
@@ -59,6 +59,6 @@ class ExceptionThrowTarget2 {
             System.out.println("            ---> ExceptionThrowTarget2 EXECUTE ERROR!!!!!");
             throw e;
         }
-        System.out.println("            ===== ExceptionThrowTarget2 END =====");
+        System.out.println("            ===== ExceptionThrowTarget2 END #####");
     }
 }
