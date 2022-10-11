@@ -9,13 +9,13 @@ public class ClosureMain {
         // 匿名クラスのインスタンスを生成する［②］
         CalcFunction cf1 = new CalcFunction() {
             @Override
-            public int calc(int x, int y) {
-                return base + x + y;
+            public int calc(int a, int b) {
+                return base + a + b;
             }
         };
 
         // ラムダ式[③]
-        CalcFunction cf2 = (int x, int y) -> {
+        CalcFunction cf2 = (x, y) -> {
             return base + x + y;
         };
 
