@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"pro.kensait.java.basic.lesson21_1_4.others","l":"Foo"},{"p":"pro.kensait.java.basic.lesson21_1_4.others","l":"HogeException"},{"p":"pro.kensait.java.basic.lesson21_1_4.javadoc","l":"JavadocSample"}];updateSearchResults();

@@ -12,25 +12,3 @@ public class Main4 {
         }
     }
 }
-
-class FooException extends Exception {
-    public FooException() {
-        super();
-    }
-
-    public void f() {
-        System.out.println("###");
-    }
-}
-
-class BarException extends FooException {
-    public BarException() {
-        super();
-    }
-}
-
-class BazException extends FooException {
-    public BazException() {
-        super();
-    }
-}
