@@ -1,7 +1,6 @@
 package pro.kensait.java.basic.lesson18_1_2.list;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 public class ArrayListMain {
@@ -11,13 +10,16 @@ public class ArrayListMain {
         list.add("bar");
         list.add("baz");
         list.add("qux");
+        /*
         for (String str : list) {
             if (str.equals("bar")) {
                 list.remove("bar");
             }
         }
+        */
 
         System.out.println(list);
+        /*
         Iterator<String> iter = list.iterator();
         while (iter.hasNext()) {
             String str = iter.next();
@@ -26,9 +28,10 @@ public class ArrayListMain {
                 list.remove("bar");
             }
         }
+        */
 
         System.out.println(list);
-        System.exit(0);
+        //System.exit(0);
 
         System.out.println("##### 最初の状態 #####");
         System.out.println(list);
@@ -58,6 +61,12 @@ public class ArrayListMain {
         list.addAll(list2);
         System.out.println(list);
 
+        // 配列化、ここに入れた意味はないので後で移動する
+        String[] array = list.toArray(new String[0]);
+        for (String str : array) {
+            System.out.println(str);
+        }
+
         System.out.println("##### 要素を1件削除 #####");
         list.remove(1);
         System.out.println(list);
@@ -65,5 +74,7 @@ public class ArrayListMain {
         System.out.println("##### 要素を全件削除 #####");
         list.clear();
         System.out.println("Empty? => " + list.isEmpty());
+        
+
     }
 }
