@@ -3,6 +3,7 @@ package pro.kensait.java.cast;
 public class Main {
     public static void main(String[] args) {
         Foo foo = new Qux();
+        
         if (foo instanceof Foo) System.out.println("Foo"); // true
         if (foo instanceof Bar) System.out.println("Bar");
         if (foo instanceof Qux) System.out.println("Qux");

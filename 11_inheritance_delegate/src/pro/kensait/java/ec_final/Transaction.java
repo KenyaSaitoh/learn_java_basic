@@ -5,7 +5,6 @@ public class Transaction {
         if (customer.overTotalPrice(totalPrice)) {
             return; // ここでは便宜上、何もしないでリターンする
         }
-        int point = totalPrice / 10;
-        customer.addPoint(point);
+        customer.addPoint(totalPrice);
     }
 }

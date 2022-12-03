@@ -7,7 +7,8 @@ public class GeneralCustomer extends CustomerBase {
 
     // ポイントを加算する（オーバーライド）
     @Override
-    public void addPoint(int value) {
-        this.point = this.point + value;
+    public void addPoint(int totalPrice) {
+        int point = (int) (totalPrice * 0.05); // 購入金額の5%
+        this.point = this.point + point;
     }
 }
