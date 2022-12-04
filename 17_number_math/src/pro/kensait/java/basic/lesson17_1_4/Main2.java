@@ -1,4 +1,4 @@
-package pro.kensait.java.basic.lesson17_1_3;
+package pro.kensait.java.basic.lesson17_1_4;
 
 import java.util.Random;
 

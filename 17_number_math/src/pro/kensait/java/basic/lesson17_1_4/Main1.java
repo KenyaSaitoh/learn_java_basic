@@ -1,4 +1,4 @@
-package pro.kensait.java.basic.lesson17_1_3;
+package pro.kensait.java.basic.lesson17_1_4;
 
 public class Main1 {
     public static void main(String[] args) {

@@ -1,10 +1,12 @@
-package pro.kensait.java.basic.lesson21_3_2;
+package pro.kensait.java.basic.lesson21_3_3;
 
+import java.util.Locale;
 import java.util.ResourceBundle;
 
-public class Main_ResourceBundle1 {
+public class Main_ResourceBundle_Locale {
     public static void main(String[] args) {
-        ResourceBundle rb = ResourceBundle.getBundle("MyResource");
+        Locale locale = new Locale("en", "US");
+        ResourceBundle rb = ResourceBundle.getBundle("MyResource", locale);
         String name = rb.getString("name");
         int age = Integer.parseInt(rb.getString("age"));
         String address = rb.getString("address");

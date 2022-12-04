@@ -37,7 +37,8 @@ public class GeneralCustomer {
     }
 
     // ポイントを加算する
-    public void addPoint(int value) {
-        setPoint(getPoint() + value);
+    public void addPoint(int totalPrice) {
+        int point = (int) (totalPrice * 0.05); // 購入金額の5%
+        setPoint(getPoint() + point);
     }
 }

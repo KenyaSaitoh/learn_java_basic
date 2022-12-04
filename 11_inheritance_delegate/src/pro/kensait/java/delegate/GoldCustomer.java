@@ -37,7 +37,8 @@ public class GoldCustomer {
     }
 
     // ポイントを加算する
-    public void addPoint(int value) {
-        setPoint(getPoint() + value * 2); // ポイントは2倍加算
+    public void addPoint(int totalPrice) {
+        int point = (int) (totalPrice * 0.1); // 購入金額の10%
+        setPoint(getPoint() + point);
     }
 }
