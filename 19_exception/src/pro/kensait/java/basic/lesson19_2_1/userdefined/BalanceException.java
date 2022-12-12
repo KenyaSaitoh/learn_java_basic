@@ -3,7 +3,7 @@ package pro.kensait.java.basic.lesson19_2_1.userdefined;
 import java.math.BigDecimal;
 
 public class BalanceException extends Exception {
-    private BigDecimal blance;
+    private BigDecimal balance;
     public BalanceException(String message) {
         super(message);
     }
@@ -13,14 +13,14 @@ public class BalanceException extends Exception {
     public BalanceException(String message, Throwable cause) {
         super(message, cause);
     }
-    public BalanceException(String message, BigDecimal blance) {
+    public BalanceException(String message, BigDecimal balance) {
         super(message);
-        this.blance = blance;
+        this.balance = balance;
     }
     public BigDecimal getBlance() {
-        return blance;
+        return balance;
     }
-    public void setBlance(BigDecimal blance) {
-        this.blance = blance;
+    public void setBlance(BigDecimal balance) {
+        this.balance = balance;
     }
 }

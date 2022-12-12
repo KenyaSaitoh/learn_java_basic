@@ -4,8 +4,8 @@ public class Main {
     public static void main(String[] args) {
         Foo foo = new Foo();
         try {
-            int length = foo.process("aaaaaaaaaaaaaaaaaaaaa"); //［①］
-            System.out.println(length); //［②］ 
+            int length = foo.process("foooooooooo"); //［1］
+            System.out.println(length); //［2］ 
         } catch (BusinessException be) {
             be.printStackTrace();
             Throwable t = be.getCause();

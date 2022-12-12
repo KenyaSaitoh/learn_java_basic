@@ -3,9 +3,9 @@ package pro.kensait.java.basic.lesson19_1_4.propagation1;
 public class Bar {
     public int process(String param) {
         int length = param.length();
-        if (20 < length) {
-            throw new IllegalArgumentException("文字列長が過大"); //［⑤］
+        if (10 < length) {
+            throw new IllegalArgumentException("文字列長が過大"); //［5］
         }
-        return length; //［⑥］
+        return length; //［6］
     }
 }

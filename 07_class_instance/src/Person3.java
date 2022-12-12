@@ -4,7 +4,8 @@ class Person3 {
     String nationality;
     String email;
 
-    Person3() {};
+    Person3() {
+    }
 
     Person3(String name) {
         this.name = name;
@@ -50,31 +51,32 @@ class Person3 {
         return message;
     }
 
-//    String createGreetMessage(String language, boolean isMorning) {
-//        String message = null;
-//        if (isMorning) {
-//            if (language.equals("JAPAN")) {
-//                message = "おはよう！私は" + name + "、" + age + "歳です。";
-//            } else {
-//                message = "Good Morning! I'm " + name + "," + age + " years old.";
-//            }
-//        } else {
-//            if (language.equals("JAPAN")) {
-//                message = "こんにちは！私は" + name + "、" + age + "歳です。";
-//            } else {
-//                message = "Good Afternoon! I'm " + name + "," + age + " years old.";
-//            }
-//        }
-//        return message;
-//    }
+    /*
+    String createGreetMessage(String language, boolean isMorning) {
+        String message = null;
+        if (isMorning) {
+            if (language.equals("JAPANESE")) {
+                message = "おはよう！私は" + name + "、" + age + "歳です。";
+            } else {
+                message = "Good Morning! I'm " + name + "," + age + " years old.";
+            }
+        } else {
+            if (language.equals("JAPAN")) {
+                message = "こんにちは！私は" + name + "、" + age + "歳です。";
+            } else {
+                message = "Good Afternoon! I'm " + name + "," + age + " years old.";
+            }
+        }
+        return message;
+    }
+    */
 
-    // メソッド間呼び出し
     String createGreetMessage(String language, boolean isMorning) {
         if (isMorning) {
             return createGreetMessage(language); // returnに直接メソッド呼び出しを書く
         }
         String message = null;
-        if (language.equals("JAPAN")) {
+        if (language.equals("JAPANESE")) {
             message = "こんにちは！私は" + name + "、" + age + "歳です。";
         } else {
             message = "Good Afternoon! I'm " + name + "," + age + " years old.";

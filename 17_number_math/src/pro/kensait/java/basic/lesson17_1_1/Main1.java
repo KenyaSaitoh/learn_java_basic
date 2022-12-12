@@ -3,7 +3,7 @@ package pro.kensait.java.basic.lesson17_1_1;
 public class Main1 {
     public static void main(String[] args) {
         {
-            System.out.println("***** code snippet 16_1_1_1 *****");
+            System.out.println("***** snippet 16_1_1_1 *****");
             int x = 30;
             Integer value = x;
             int y = value + 10;
@@ -13,7 +13,7 @@ public class Main1 {
             int value = Integer.parseInt(str); // 数値100
         }
         {
-            System.out.println("***** code snippet 16_1_1_2 *****");
+            System.out.println("***** snippet 16_1_1_2 *****");
             Integer value1 = 10;
             Integer value2 = 10;
             boolean b = value1.equals(value2);

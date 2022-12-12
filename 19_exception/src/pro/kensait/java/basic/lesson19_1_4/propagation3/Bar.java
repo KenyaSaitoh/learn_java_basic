@@ -6,11 +6,11 @@ import java.net.URL;
 public class Bar {
     public int process(String param) {
         try {
-            URL url = new URL(param); //［①］
+            URL url = new URL(param); //［1］
             return url.toString().length();
-        } catch (MalformedURLException mue) { //［②］
+        } catch (MalformedURLException mue) { //［2］
             System.out.println("URL生成不可, msg => " + mue.getMessage());
-            return 0; //［③］
+            return 0; //［3］
         }
     }
 }

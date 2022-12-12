@@ -4,9 +4,9 @@ public class ClosureMain {
 
     public static void main(String[] args) {
 
-        int base = 100; // ローカル変数［①］
+        int base = 100; // ローカル変数［1］
 
-        // 匿名クラスのインスタンスを生成する［②］
+        // 匿名クラスのインスタンスを生成する［2］
         CalcFunction cf1 = new CalcFunction() {
             @Override
             public int calc(int a, int b) {
