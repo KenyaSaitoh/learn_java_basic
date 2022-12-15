@@ -1,9 +1,4 @@
 class Person {
-    // フィールド
-    final String name;
-    final int age;
-    Person(String name, int age) {
-        this.name = name;
-        this.age = age;
-    }
+    static String name; // 名前
+    static int age; // 年齢
 }

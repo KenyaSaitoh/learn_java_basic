@@ -5,27 +5,27 @@ public class Main_6_3 {
     public static void main(String[] args) throws Exception {
 
         {
-            System.out.println("***** snippet1 *****");
+            System.out.println("***** snippet_6_3_1 *****");
             for (int i = 0; i < 10; i++) {
                 System.out.println("繰り返し, カウンタ変数 => " + i);
             }
         }
         {
-            System.out.println("***** snippet2 *****");
+            System.out.println("***** snippet_6_3_2 *****");
             int sum = 0; //［1］
             for (int i = 0; i < 10; i++) {
                 sum += i + 1; //［2］
             }
         }
         {
-            System.out.println("***** snippet3 *****");
+            System.out.println("***** snippet_6_3_3 *****");
             int sum = 0;
             for (int i = 1; i <= 10; i++) {
                 sum += i;
             }
         }
         {
-            System.out.println("***** snippet4 *****");
+            System.out.println("***** snippet_6_3_4 *****");
             int i = 0; //［1］
             while (i < 10) { //［2］
                 System.out.println("繰り返し, カウンタ変数 => " + i);
@@ -33,7 +33,7 @@ public class Main_6_3 {
             }
         }
         {
-            System.out.println("***** snippet5 *****");
+            System.out.println("***** snippet_6_3_5 *****");
             int total = 1; //［1］
             while (total < 10000) { //［2］
                 total = total * 5; //［3］
@@ -41,7 +41,7 @@ public class Main_6_3 {
             System.out.println(total); //［4］
         }
         {
-            System.out.println("***** snippet6 *****");
+            System.out.println("***** snippet_6_3_6 *****");
             String str = "foo,bar,baz,qux";
             StringTokenizer st = new StringTokenizer(str, ",");
             while (st.hasMoreTokens()) { // ［1］
@@ -50,7 +50,7 @@ public class Main_6_3 {
             }
         }
         {
-            System.out.println("***** snippet7 *****");
+            System.out.println("***** snippet_6_3_7 *****");
             int total = 1;
             do {
                 total = total * 5;
@@ -58,7 +58,7 @@ public class Main_6_3 {
             System.out.println(total);
         }
         {
-            System.out.println("***** snippet8 *****");
+            System.out.println("***** snippet_6_3_8 *****");
             int sum = 0;
             for (int i = 0; i < 10; i++) {
                 int num = i + 1; // 加算する数
@@ -69,7 +69,7 @@ public class Main_6_3 {
             }
         }
         {
-            System.out.println("***** snippet9 *****");
+            System.out.println("***** snippet_6_3_9 *****");
             int sum = 0;
             for (int i = 0; i < 10; i++) {
                 int num = i + 1;
@@ -80,7 +80,7 @@ public class Main_6_3 {
             }
         }
         {
-            System.out.println("***** snippet10 *****");
+            System.out.println("***** snippet_6_3_10 *****");
             int[] nums = {8, 5, 10, 12, 1, 9}; //［1］
             boolean flag = false;//［2］
             for (int i = 0; i < 10; i++) {
@@ -91,7 +91,7 @@ public class Main_6_3 {
             }
         }
         {
-            System.out.println("***** snippet11 *****");
+            System.out.println("***** snippet_6_3_11 *****");
             boolean flag = true;
             while (flag) {
                 // 繰り返される

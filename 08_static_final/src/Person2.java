@@ -1,5 +1,8 @@
 class Person2 {
-    // フィールド
-    static String name;
-    static int age;
+    final String name;
+    final int age;
+    Person2(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
 }
