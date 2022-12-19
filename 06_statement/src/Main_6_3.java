@@ -3,7 +3,6 @@ import java.util.StringTokenizer;
 public class Main_6_3 {
     @SuppressWarnings("unused")
     public static void main(String[] args) throws Exception {
-
         {
             System.out.println("***** snippet_6_3_1 *****");
             for (int i = 0; i < 10; i++) {

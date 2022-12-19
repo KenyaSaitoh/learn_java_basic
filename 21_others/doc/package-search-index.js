@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"pro.kensait.java.basic.lesson21_1_4.javadoc"},{"l":"pro.kensait.java.basic.lesson21_1_4.others"},{"l":"すべてのパッケージ","u":"allpackages-index.html"}];updateSearchResults();

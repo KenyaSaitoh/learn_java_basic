@@ -5,5 +5,6 @@ public class Main_Average_1 {
         int carolScore = 700;
         double sum = aliceScore + bobScore + carolScore;
         double avg = sum / 3;
+        System.out.println(avg);
     }
 }

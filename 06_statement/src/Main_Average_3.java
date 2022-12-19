@@ -1,10 +1,11 @@
 public class Main_Average_3 {
     public static void main(String[] args) {
-        int[] scores = {650, 570, 700}; //［1］
-        double sum = 0;
-        for (int i = 0; i < scores.length; i++) {
-            sum += scores[i];
+        int[] scores = {650, 570, 700};
+        int sum = 0;
+        for (int score : scores) { //［1］
+            sum += score; //［2］
         }
-        double avg = sum / scores.length;
+        int avg = sum / scores.length;
+        System.out.println(avg);
     }
 }

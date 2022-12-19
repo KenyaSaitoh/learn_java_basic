@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class Main_If_8 {
     @SuppressWarnings({ "resource", "unused" })
     public static void main(String[] args) throws Exception {
-        // 変数セットアップ
         int GENERAL_CUSTOMER = 0;
         int GOLD_CUSTOMER = 1;
 

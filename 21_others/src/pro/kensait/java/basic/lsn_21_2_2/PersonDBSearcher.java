@@ -4,7 +4,7 @@ import java.util.Map;
 import java.util.Optional;
 
 public class PersonDBSearcher {
-    public Person find1(String name) {
+    public Person find(String name) {
         Person person = personDB.get(name);
         return person;
     }
@@ -24,6 +24,6 @@ public class PersonDBSearcher {
 
     private static Map<String, Person> personDB =
             Map.of("Alice", new Person("Alice", 25, "female"),
-                    "Bab",new Person("Bob", 35, "male"),
+                    "Bab", new Person("Bob", 35, "male"),
                     "Carol", new Person("Carol", 25, "female"));
 }
