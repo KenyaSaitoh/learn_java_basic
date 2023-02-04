@@ -11,8 +11,8 @@ public class Main {
             System.out.println("***** snippet_2 *****");
             String str1 = "foo";
             String str2 = str1;
-            str1 = "bar"; // str2は書き変わらない
-            System.out.println(str2);
+            str2 = "bar"; // str1は書き変わらない
+            System.out.println(str1);
         }
         {
             System.out.println("***** snippet_3 *****");

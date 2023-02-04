@@ -8,8 +8,8 @@ public class Main_5_2 {
             System.out.println("***** snippet_5_2_2 *****");
             int[] scores = {650, 570, 700};
             int[] scores2 = scores; // 配列から配列に代入する
-            scores[0] = 660; // 代入元の値を書き換える
-            System.out.println(scores2[0]); // 代入先はどうなる？
+            scores2[0] = 660; // 代入先の値を書き換える
+            System.out.println(scores[0]); // 代入元はどうなる？
         }
     }
 }

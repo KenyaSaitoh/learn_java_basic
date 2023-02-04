@@ -1,38 +1,60 @@
 public class Main_3_2 {
     public static void main(String[] args) {
         {
-            System.out.println("***** snippet_3_2_1 *****");
-            //byte x = 400; // コンパイルエラー
+            System.out.println("***** snippet_3_3_1 *****");
+            int x1 = 200; // 10進数リテラル
+            int x2 = 0xC8; // 16進数リテラル
+            int x3 = 0b11001000; // 2進数リテラル
+            int x4 = 0310; // 8進数リテラル
         }
         {
-            System.out.println("***** snippet_3_2_2 *****");
-            byte x = 100;
-            x += 300; // コンパイルエラー発生せず
+            System.out.println("***** snippet_3_3_2 *****");
+            double d1 = 123.4567; // 整数部と小数部の組み合わせによる表記
+            double d2 = 0.1234567e3; // 指数表現
+            double d3 = .1234567e3; // 指数表現（先頭の0は省略可能）
         }
         {
-            System.out.println("***** snippet_3_2_3 *****");
-            double d1 = 0.1 + 0.2;
-            double d2 = 0.3;
-            if (d1 == d2) {} // この判定はfalseになる［1］
+            System.out.println("***** snippet_3_3_3 *****");
+            int x1 = 1234567;
+            int x2 = 1_234_567;
         }
         {
-            System.out.println("***** snippet_3_2_4 *****");
-            boolean flag = true; // またはfalse
+            System.out.println("***** snippet_3_3_4 *****");
+            double d1 = 123.456_7; // 整数部と小数部による表記
+            double d2 = .1_234_567e3; // 指数表現
         }
         {
-            System.out.println("***** snippet_3_2_5 *****");
-            int x = 10, y = 15;
-            boolean flag = y == x + 5;
+            System.out.println("***** snippet_3_3_5 *****");
+            char c = 'ア';
         }
         {
-            System.out.println("***** snippet_3_2_6 *****");
-            char c1 = 'ア'; //［1］
-            char c2 = 0x30A2; //［2］
-            char c3 = 12450; //［3］
-        }
-        {
-            System.out.println("***** snippet_3_2_7 *****");
+            System.out.println("***** snippet_3_3_6 *****");
             String str = "foo";
+        }
+        {
+            System.out.println("***** snippet_3_3_7 *****");
+            String str = "a\tb";
+            System.out.println(str);
+        }
+        {
+            System.out.println("***** snippet_3_3_8 *****");
+            String str = "\'foo\'";
+            System.out.println(str);
+        }
+        {
+            System.out.println("***** snippet_3_3_9 *****");
+            String str1 = "こんにちは！私はAlice、25歳です。日本語を話せます。"; //［1］
+            String str2 = "こんにちは！私はAlice、25歳です。" + //［2］
+                    "日本語を話せます。";
+        }
+        {
+            System.out.println("***** snippet_3_3_10 *****");
+            //String str = "こんにちは！私はAlice、25歳です。
+            //        日本語を話せます。"; // コンパイルエラー
+        }
+        {
+            System.out.println("***** snippet_3_3_11 *****");
+            String str = "こんにちは！私はAlice、25歳です。\n日本語を話せます。";
         }
     }
 }

@@ -10,11 +10,11 @@ public class Main_2 {
         System.out.print("val2? => ");
         int val2 = Integer.parseInt(new Scanner(System.in).nextLine());
 
-        try { //［1］
-            int answer = val1 / val2; //［2］
+        try { //【1】
+            int answer = val1 / val2; //【2】
             System.out.println(answer);
-        } catch (ArithmeticException ae) { //［3］
-            System.out.println("ゼロ除算発生, msg => " + ae.getMessage());//［4］
+        } catch (ArithmeticException ae) { //【3】
+            System.out.println("ゼロ除算発生, msg => " + ae.getMessage()); //【4】
         }
     }
 }

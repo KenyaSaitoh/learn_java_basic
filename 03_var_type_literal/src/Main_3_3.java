@@ -1,60 +1,93 @@
 public class Main_3_3 {
     public static void main(String[] args) {
         {
-            System.out.println("***** snippet_3_3_1 *****");
-            int x1 = 200; // 10進数リテラル
-            int x2 = 0xC8; // 16進数リテラル
-            int x3 = 0b11001000; // 2進数リテラル
-            int x4 = 0310; // 8進数リテラル
+            System.out.println("***** snippet_3_4_1 *****");
+            int x = 10;
+            int y = x; // 変数yに10が代入される
         }
         {
-            System.out.println("***** snippet_3_3_2 *****");
-            double d1 = 123.4567; // 整数部と小数部の組み合わせによる表記
-            double d2 = 0.1234567e3; // 指数表現
-            double d3 = .1234567e3; // 指数表現（先頭の0は省略可能）
+            System.out.println("***** snippet_3_4_2 *****");
+            String str1 = "foo";
+            String str2 = str1; // 変数str2の文字列は"foo"
         }
         {
-            System.out.println("***** snippet_3_3_3 *****");
-            int x1 = 1234567;
-            int x2 = 1_234_567;
+            System.out.println("***** snippet_3_4_3 *****");
+            int x = 10;
+            int y = x; // 変数yに10が代入される
+            x = 20;
+            System.out.println(y); // どうなる？
         }
         {
-            System.out.println("***** snippet_3_3_4 *****");
-            double d1 = 123.456_7; // 整数部と小数部による表記
-            double d2 = .1_234_567e3; // 指数表現
+            System.out.println("***** snippet_3_4_4 *****");
+            String str1 = "foo";
+            String str2 = str1; // 変数str2の文字列は"foo"
+            str1 = "bar";
+            System.out.println(str2); // どうなる？
         }
         {
-            System.out.println("***** snippet_3_3_5 *****");
-            char c = 'ア';
+            System.out.println("***** snippet_3_4_5 *****");
+            //int x = "abc"; // 文字列をint型に代入
+            //String str = 10; // 数値をString型に代入
         }
         {
-            System.out.println("***** snippet_3_3_6 *****");
-            String str = "foo";
+            System.out.println("***** snippet_3_4_6 *****");
+            int x = 100;
+            long y = x;
         }
         {
-            System.out.println("***** snippet_3_3_7 *****");
-            String str = "a\tb";
-            System.out.println(str);
+            System.out.println("***** snippet_3_4_7 *****");
+            float f = 12345.67F;
+            double d = f;
         }
         {
-            System.out.println("***** snippet_3_3_8 *****");
-            String str = "\'foo\'";
-            System.out.println(str);
+            System.out.println("***** snippet_3_4_8 *****");
+            int x = 100;
+            // short y = x; // コンパイルエラー
         }
         {
-            System.out.println("***** snippet_3_3_9 *****");
-            String str1 = "こんにちは！私はAlice、25歳です。日本語を話せます。"; //［1］
-            String str2 = "こんにちは！私はAlice、25歳です。" + //［2］
-                    "日本語を話せます。";
+            System.out.println("***** snippet_3_4_9 *****");
+            int x = 100;
+            short y = (short) x; // コンパイルエラーは解消
         }
         {
-            System.out.println("***** snippet_3_3_10 *****");
-            //String str = "こんにちは！私はAlice、25歳です。
-            //        日本語を話せます。"; // コンパイルエラー
+            System.out.println("***** snippet_3_4_10 *****");
+            int x = 400;
+            byte y = (byte) x;
         }
         {
-            System.out.println("***** snippet_3_3_11 *****");
-            String str = "こんにちは！私はAlice、25歳です。\n日本語を話せます。";
+            System.out.println("***** snippet_3_4_11 *****");
+            double d = 12345.67;
+            int x = (int) d;
+        }
+        {
+            System.out.println("***** snippet_3_4_12 *****");
+            long x = 100;
+        }
+        {
+            System.out.println("***** snippet_3_4_13 *****");
+            //long x = 3_000_000_000; // 30億はint型の範囲外
+        }
+        {
+            System.out.println("***** snippet_3_4_14 *****");
+            long x = 3_000_000_000L;
+        }
+        {
+            System.out.println("***** snippet_3_4_15 *****");
+            float f = 12345.67F;
+        }
+        {
+            System.out.println("***** snippet_3_4_16 *****");
+            var x = 10; // int型と推論される
+        }
+        {
+            System.out.println("***** snippet_3_4_17 *****");
+            var d = 12345.67; // double型と推論される
+            var str = "foo"; // String型と推論される
+        }
+        {
+            System.out.println("***** snippet_3_4_18 *****");
+            //var x; // コンパイルエラー
+            //var x = 10, y = 20; // コンパイルエラー
         }
     }
 }

@@ -2,7 +2,7 @@ public class Main_4_1 {
     public static void main(String[] args) {
         {
             System.out.println("***** snippet_4_1_1 *****");
-            int x = 10;
+            int x = 30;
             int y = x + 10;
         }
         {
@@ -99,6 +99,36 @@ public class Main_4_1 {
             System.out.println("***** snippet_4_1_20 *****");
             int x = 10;
             boolean flag = (x <= 15) || (x % 2 == 0); // trueが返る
+        }
+        {
+            System.out.println("***** snippet_4_1_21 *****");
+            int x = 12 & 5;
+            System.out.println(x);
+        }
+        {
+            System.out.println("***** snippet_4_1_22 *****");
+            int x = 12 | 5;
+            System.out.println(x);
+        }
+        {
+            System.out.println("***** snippet_4_1_23 *****");
+            int x = 12 ^ 5;
+            System.out.println(x);
+        }
+        {
+            System.out.println("***** snippet_4_1_24 *****");
+            int x = ~4;
+            System.out.println(x);
+        }
+        {
+            System.out.println("***** snippet_4_1_25 *****");
+            int x = 13 >> 2;
+            System.out.println(x);
+        }
+        {
+            System.out.println("***** snippet_4_1_26 *****");
+            byte x = (byte) (-77 >>> 2);
+            System.out.println(x);
         }
     }
 }
