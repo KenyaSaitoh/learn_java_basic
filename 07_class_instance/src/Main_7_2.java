@@ -25,11 +25,5 @@ public class Main_7_2 {
             printer.printMessage("Hello, Alice!", 5);
             printer.printMessage("Goodbye, Bob!", 10);
         }
-        {
-            System.out.println("***** snippet_7_2_5 *****");
-            Calculator calc = new Calculator();
-            int answer = calc.add(30, 10);
-            System.out.println(answer);
-        }
     }
 }
