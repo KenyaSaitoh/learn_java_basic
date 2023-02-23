@@ -59,24 +59,25 @@ public class Main_6_3 {
         {
             System.out.println("***** snippet_6_3_8 *****");
             int sum = 0;
-            for (int i = 0; i < 10; i++) {
+            for (int i = 0; i < 100; i++) {
                 int num = i + 1; // 加算する数
-                if (num % 3 == 0) { //［1］
-                    continue; //［2］
+                if (num % 3 != 0) { //【1】
+                    continue; //【2】
                 }
-                sum += i + 1; //［3］
+                sum += i + 1; //【3】
             }
+            System.out.println(sum);
         }
         {
             System.out.println("***** snippet_6_3_9 *****");
             int sum = 0;
-            for (int i = 0; i < 10; i++) {
+            for (int i = 0; i < 100; i++) {
                 int num = i + 1;
-                if (num % 3 != 0) {
-                    sum += i + 1;
+                if (num % 3 == 0) {
+                    sum += i + 1;  // 3の倍数のときに加算
                 }
-                // 何らかの後続処理
             }
+            System.out.println(sum);
         }
         {
             System.out.println("***** snippet_6_3_10 *****");
