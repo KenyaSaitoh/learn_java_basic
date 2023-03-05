@@ -1,4 +1,4 @@
-package pro.kensait.java.basic.exer01.work;
+package pro.kensait.java.basic.exer_121.work;
 
 import pro.kensait.java.cuifw.ConsoleMenu;
 import pro.kensait.java.cuifw.ParamInfo;
@@ -7,7 +7,7 @@ public class DeliveryService {
     int GENERAL_CUSTOMER = 0;
     int GOLD_CUSTOMER = 1;
 
-    @ConsoleMenu(order = 1, name = "購入金額による送料計算その1")
+    @ConsoleMenu(order = 1, title = "購入金額による送料計算その1")
     public int calcFee1(
             @ParamInfo(order = 1, name = "購入金額") int totalPrice) {
         int deliveryFee;
@@ -19,7 +19,7 @@ public class DeliveryService {
         return deliveryFee;
     }
 
-    @ConsoleMenu(order = 2, name = "購入金額による送料計算その2")
+    @ConsoleMenu(order = 2, title = "購入金額による送料計算その2")
     public int calcFee2(
             @ParamInfo(order = 1, name = "購入金額") int totalPrice) {
         int deliveryFee;
@@ -33,7 +33,7 @@ public class DeliveryService {
         return deliveryFee;
     }
 
-    @ConsoleMenu(order = 3, name = "購入金額と顧客種別による送料計算その1")
+    @ConsoleMenu(order = 3, title = "購入金額と顧客種別による送料計算その1")
     public int calcFee3(
             @ParamInfo(order = 1, name = "顧客種別 (0:GENERAL, 1:GOLD)") int customerType,
             @ParamInfo(order = 2, name = "購入金額") int totalPrice) {
@@ -46,7 +46,7 @@ public class DeliveryService {
         return deliveryFee;
     }
 
-    @ConsoleMenu(order = 4, name = "購入金額と顧客種別による送料計算その2")
+    @ConsoleMenu(order = 4, title = "購入金額と顧客種別による送料計算その2")
     public int calcFee4(
             @ParamInfo(order = 1, name = "顧客種別 (0:GENERAL, 1:GOLD)") int customerType,
             @ParamInfo(order = 2, name = "購入金額") int totalPrice) {

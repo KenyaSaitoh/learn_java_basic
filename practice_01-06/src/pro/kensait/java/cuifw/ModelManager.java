@@ -12,7 +12,6 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
-import java.util.concurrent.CopyOnWriteArrayList;
 
 public class ModelManager<T> {
     private static Class<?> modelClass;
@@ -44,7 +43,7 @@ public class ModelManager<T> {
     }
 
     public static <T> List<T> readAll() {
-        List<T> modelList = new CopyOnWriteArrayList<T>();
+        List<T> modelList = new ArrayList<T>();
         try (BufferedReader br = Files.newBufferedReader(modelCsvPath,
                 StandardCharsets.UTF_8)) {
             String line;

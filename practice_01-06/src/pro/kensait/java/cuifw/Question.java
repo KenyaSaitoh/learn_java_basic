@@ -6,8 +6,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.TYPE)
-public @interface Array {
-    int[] intArray() default 0;
-    String[] strArray() default "";
+@Target(ElementType.METHOD)
+public @interface Question {
+    String value();
 }

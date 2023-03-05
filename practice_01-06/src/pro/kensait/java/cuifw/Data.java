@@ -6,8 +6,8 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.METHOD)
-public @interface ConsoleMenu {
-    int order();
-    String title() default "";
+@Target(ElementType.TYPE)
+public @interface Data {
+    int[] intData() default 0;
+    String[] stringData() default "";
 }

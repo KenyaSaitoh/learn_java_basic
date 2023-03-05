@@ -42,8 +42,8 @@ public class ConsoleApplication {
         // モデルのセットアップ
         setUpModel(clazz);
 
-        // 配列のセットアップ
-        setUpArray(clazz);
+        // データのセットアップ
+        setUpData(clazz);
 
         // コンソールからの入力による引数リストの作成
         Processor processor = clazz.getAnnotation(Processor.class);
@@ -56,11 +56,17 @@ public class ConsoleApplication {
 
         Map<Integer, Method> menuMap = new HashMap<>();
         Map<Integer, String> menuNameMap = new HashMap<>();
+        Map<Integer, String> menuQuestionMap = new HashMap<>();
         for (Method menu : menus) {
             menuId++;
             menuMap.put(menuId, menu);
             ConsoleMenu menuInfo = menu.getAnnotation(ConsoleMenu.class);
-            menuNameMap.put(menuId, menuInfo.name());
+            Question questionInfo = menu.getAnnotation(Question.class);
+            String menuName = menuInfo.title().equals("") ? menu.getName() : menuInfo.title();
+            menuNameMap.put(menuId, menuName);
+            if (questionInfo != null) {
+                menuQuestionMap.put(menuId, questionInfo.value());
+            } 
         }
 
         try (Scanner sc = new Scanner(System.in)) {
@@ -68,9 +74,10 @@ public class ConsoleApplication {
             // メインループ
             MAIN_LOOP: while (true) {
                 System.out.println(BAR_SEGMENT + " [開始] " + BAR_SEGMENT);
-                System.out.println("0: 終了");
+                System.out.println(" 0: 終了");
                 for (Map.Entry<Integer, String> entry : menuNameMap.entrySet()) {
-                    System.out.println(entry.getKey() + ": " + entry.getValue());
+                    String edge = entry.getKey() < 10 ? " " : "";
+                    System.out.println(edge + entry.getKey() + ": " + entry.getValue());
                 }
                 // メニューループ
                 MENU_LOOP: while (true) {
@@ -91,8 +98,10 @@ public class ConsoleApplication {
                 System.out.println();
                 System.out.println(BAR_SEGMENT + " [" + menuNameMap.get(menuInput) +
                         "] " + BAR_SEGMENT);
-
-                // 引数ループ
+                if (menuQuestionMap.get(menuInput) != null) {
+                    System.out.println(menuQuestionMap.get(menuInput));
+                }
+                // 引数を生成する
                 Method targetMethod = menuMap.get(menuInput);
                 Parameter[] params = Util.sortParams(targetMethod);
                 checkParameter(params);
@@ -105,14 +114,14 @@ public class ConsoleApplication {
                 }
                 Object[] paramArray = paramValueList.toArray(new Object[0]);
                 System.out.println(OUTPUT_PREFIX + "引数 => " + paramValueList);
-                // Processor呼び出し
+ 
+                // Processorを呼び出す
                 Object targetInstance = processorClass.getDeclaredConstructor()
                         .newInstance();
                 Object result = null;
                 try {
                     result = targetMethod.invoke(targetInstance, paramArray);
                     showResult(result);
-                
                 } catch (Exception e) {
                     Throwable th = e.getCause();
                     if (th != null) {
@@ -144,12 +153,12 @@ public class ConsoleApplication {
         }
     }
 
-    // 配列をセットアップする
-    private static void setUpArray(Class<?> clazz) {
-        Array arrayAnno = clazz.getAnnotation(Array.class);
-        if (arrayAnno != null) {
-            ArrayHolder.setIntArray(arrayAnno.intArray());
-            ArrayHolder.setStrArray(arrayAnno.strArray());
+    // データをセットアップする
+    private static void setUpData(Class<?> clazz) {
+        Data dataAnno = clazz.getAnnotation(Data.class);
+        if (dataAnno != null) {
+            DataHolder.setIntData(dataAnno.intData());
+            DataHolder.setStringData(dataAnno.stringData());
         }
     }
 
@@ -223,7 +232,7 @@ public class ConsoleApplication {
                             continue PARAM_LOOP;
                         }
                     } else if (ft == Integer.class || ft == Integer.TYPE) {
-                        System.out.print(INPUT_PREFIX + fieldName + " (整数) => ");
+                        System.out.print(INPUT_PREFIX + fieldName + " (int) => ");
                         try {
                             Integer val = Integer.parseInt(sc.nextLine());
                             field.set(instance, val);
@@ -233,7 +242,7 @@ public class ConsoleApplication {
                             continue PARAM_LOOP;
                         }
                     } else if (ft == Double.class || ft == Double.TYPE) {
-                        System.out.print(INPUT_PREFIX + fieldName + " (浮動小数点数) => ");
+                        System.out.print(INPUT_PREFIX + fieldName + " (double) => ");
                         try {
                             Double val = Double.parseDouble(sc.nextLine());
                             field.set(instance, val);
@@ -324,7 +333,7 @@ public class ConsoleApplication {
                         continue PARAM_LOOP;
                     }
                 } else if (pt == Integer.class || pt == Integer.TYPE) {
-                        System.out.print(INPUT_PREFIX + paramName + " (整数) => ");
+                        System.out.print(INPUT_PREFIX + paramName + " (int) => ");
                         try {
                             Integer val = Integer.parseInt(sc.nextLine());
                             paramValueList.add(val);
@@ -334,7 +343,7 @@ public class ConsoleApplication {
                             continue PARAM_LOOP;
                         }
                 } else if (pt == Double.class || pt == Double.TYPE) {
-                    System.out.print(INPUT_PREFIX + paramName + " (浮動小数点数) => ");
+                    System.out.print(INPUT_PREFIX + paramName + " (double) => ");
                     try {
                         Double val = Double.parseDouble(sc.nextLine());
                         paramValueList.add(val);
@@ -429,7 +438,7 @@ public class ConsoleApplication {
         System.err.println(OUTPUT_PREFIX_2 + "メッセージ => " + th.getMessage());
         sleepAWhile();
     }
-    
+
     private static void sleepAWhile() {
         try {
             Thread.sleep(300);

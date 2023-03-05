@@ -1,4 +1,4 @@
-package pro.kensait.java.basic.exer03.work;
+package pro.kensait.java.basic.exer_123.work;
 
 import java.time.LocalDate;
 
@@ -7,7 +7,7 @@ import pro.kensait.java.cuifw.ParamInfo;
 
 public class UranaiService {
 
-    @ConsoleMenu(order = 1, name = "占う")
+    @ConsoleMenu(order = 1, title = "占う")
     public Unsei calcAvg(
             @ParamInfo(order = 1, name = "生年月日") LocalDate birthDay,
             @ParamInfo(order = 2, name = "今日") LocalDate today,

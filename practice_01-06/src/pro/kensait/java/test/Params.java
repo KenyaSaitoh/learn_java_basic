@@ -1,4 +1,6 @@
-package pro.kensait.java.cuifw;
+package pro.kensait.java.test;
+
+import pro.kensait.java.cuifw.ModelInfo;
 
 public class Params {
     @ModelInfo(order = 1) private int param1;

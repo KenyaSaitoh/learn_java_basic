@@ -1,6 +1,8 @@
 package pro.kensait.java.basic.lsn_18_1_3;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 public class Main {
@@ -46,6 +48,26 @@ public class Main {
             set.add("baz");
             set.clear();
             System.out.println(set);
+        }
+        {
+            System.out.println("***** snippet_6 *****");
+            List<String> list = new ArrayList<>();
+            list.add("foo");
+            list.add("bar");
+            list.add("baz");
+            list.add("foo");
+            System.out.println(list);
+            Set<String> set = new HashSet<>(list);
+            System.out.println(set);
+        }
+        {
+            System.out.println("***** snippet_7 *****");
+            Set<String> set = new HashSet<>();
+            set.add("foo");
+            set.add("bar");
+            set.add("baz");
+            List<String> list = new ArrayList<>(set);
+            System.out.println(list);
         }
     }
 }

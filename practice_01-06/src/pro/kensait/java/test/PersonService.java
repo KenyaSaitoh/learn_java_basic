@@ -8,20 +8,20 @@ import pro.kensait.java.cuifw.ConsoleMenu;
 import pro.kensait.java.cuifw.ModelManager;
 
 public class PersonService {
-    @ConsoleMenu(order = 1, name = "すべてのPersonを取得する")
+    @ConsoleMenu(order = 1, title = "すべてのPersonを取得する")
     public List<Person> getPerson() {
         List<Person> result = ModelManager.readAll();
         return result;
     }
     
-    @ConsoleMenu(order = 2, name = "Personを登録する")
+    @ConsoleMenu(order = 2, title = "Personを登録する")
     public void putPerson(Person person) {
         List<Person> modelList = ModelManager.readAll();
         modelList.add(person);
         ModelManager.writeAll(modelList);
     }
 
-    @ConsoleMenu(order = 3, name = "Personのマップを返す")
+    @ConsoleMenu(order = 3, title = "Personのマップを返す")
     public Map<Integer, Person> getPersonMap() {
         List<Person> modelList = ModelManager.readAll();
         Map<Integer, Person> modelMap = new HashMap<>();
