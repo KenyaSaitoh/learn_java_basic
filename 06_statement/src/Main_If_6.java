@@ -12,14 +12,14 @@ public class Main_If_6 {
         int customerType = Integer.parseInt(new Scanner(System.in).nextLine());
 
         int deliveryFee;
-        if (customerType == GENERAL_CUSTOMER) {
-            if (totalPrice < 5000) {
-                deliveryFee = 900;
+        if (customerType == GOLD_CUSTOMER) {
+            if (3000 <= totalPrice) {
+                deliveryFee = 0;
             } else {
-                deliveryFee = 300;
+                deliveryFee = 600;
             }
-        } else { // ゴールド会員の場合
-            deliveryFee = 300;
+        } else { // 一般会員の場合
+            deliveryFee = 600;
         }
 
         System.out.println("deliveryFee => " + deliveryFee);

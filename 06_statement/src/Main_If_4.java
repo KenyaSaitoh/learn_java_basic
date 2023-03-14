@@ -12,10 +12,10 @@ public class Main_If_4 {
         int customerType = Integer.parseInt(new Scanner(System.in).nextLine());
 
         int deliveryFee;
-        if (customerType == GENERAL_CUSTOMER && totalPrice < 5000) {
-            deliveryFee = 900;
+        if (customerType == GOLD_CUSTOMER && 3000 <= totalPrice) {
+            deliveryFee = 0;
         } else {
-            deliveryFee = 300;
+            deliveryFee = 600;
         }
 
         System.out.println("deliveryFee => " + deliveryFee);
