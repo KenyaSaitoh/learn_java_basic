@@ -1,16 +1,16 @@
 class Person {
     // フィールド
-    String name; // 名前［1］
-    int age; // 年齢［2］
+    String name; // 名前
+    int age; // 年齢
     // コンストラクタ
-    Person() { //［3］
+    Person() {
     }
-    Person(String name, int age) { //［4］
+    Person(String name, int age) {
         this.name = name;
         this.age = age;
     }
     // メソッド
-    void sayHello() { //［5］
+    void sayHello() {
         String message = "こんにちは！私は" + name +  "、" + age + "歳です。";
         System.out.println(message);
     }

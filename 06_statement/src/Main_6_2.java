@@ -8,13 +8,13 @@ public class Main_6_2 {
         int point = 0;
 
         {
-            System.out.println("***** snippet_6_2_1 *****");
+            System.out.println("***** snippet_1 *****");
             if (customerType == GOLD_CUSTOMER) {
                 point += 100;
             }
         }
         {
-            System.out.println("***** snippet_6_2_2 *****");
+            System.out.println("***** snippet_2 *****");
             boolean isGoldCustomer = true; // またはfalse
             if (isGoldCustomer) {
                 point += 100;
