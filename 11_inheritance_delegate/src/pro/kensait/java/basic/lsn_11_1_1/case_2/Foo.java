@@ -1,4 +1,4 @@
-package pro.kensait.java.basic.lsn_11_1_1.case2;
+package pro.kensait.java.basic.lsn_11_1_1.case_2;
 
 public class Foo {
     public int base = 100;

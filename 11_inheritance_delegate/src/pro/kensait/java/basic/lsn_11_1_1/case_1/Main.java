@@ -1,4 +1,4 @@
-package pro.kensait.java.basic.lsn_11_1_1.case1;
+package pro.kensait.java.basic.lsn_11_1_1.case_1;
 
 public class Main {
 	public static void main(String[] args) {
