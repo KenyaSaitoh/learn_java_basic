@@ -35,6 +35,12 @@ public class Main {
             DecimalFormat df = new DecimalFormat("000000000");
             String str = df.format(12345);
             System.out.println(str);
+            try {
+                Integer val = df.parse(str).intValue();
+                System.out.println(val);
+            } catch (ParseException pe) {
+                new RuntimeException(pe);
+            }
         }
     }
 }
