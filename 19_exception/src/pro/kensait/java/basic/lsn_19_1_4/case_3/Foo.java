@@ -5,10 +5,10 @@ public class Foo {
         try {
             Bar bar = new Bar();
             int length = bar.process(param);
-            return length; //［1］
-        } catch (IllegalArgumentException iae) { //［2］
+            return length;
+        } catch (IllegalArgumentException iae) {
             System.out.println("計算不可, msg => " + iae.getMessage());
-            return 0; //［3］
+            return 0;
         }
     }
 }

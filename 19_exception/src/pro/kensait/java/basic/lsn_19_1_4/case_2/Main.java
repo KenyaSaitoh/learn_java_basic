@@ -9,7 +9,7 @@ public class Main {
         String param = (new Scanner(System.in).nextLine());
 
         Foo foo = new Foo();
-        int length = foo.process(param); //［1］
-        System.out.println(length); //［2］ 
+        int length = foo.process(param);
+        System.out.println(length);
     }
 }

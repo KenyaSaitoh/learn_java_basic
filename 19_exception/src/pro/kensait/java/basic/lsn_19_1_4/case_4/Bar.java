@@ -4,7 +4,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 public class Bar {
-    public int process(String param) throws MalformedURLException { //［1］
+    public int process(String param) throws MalformedURLException {
         URL url = new URL(param);
         return url.toString().length();
     }

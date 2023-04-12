@@ -1,6 +1,7 @@
 package pro.kensait.pkg2;
 
 public class Baz {
-    void doSomething() {
+    public void doSomething() {
+        System.out.println("This is pro.kensait.pkg2.Baz!");
     }
 }

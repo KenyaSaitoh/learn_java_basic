@@ -7,8 +7,8 @@ public class Foo {
         try {
             Bar bar = new Bar();
             int length = bar.process(param);
-            return length; //［1］
-        } catch (IOException ioe) { //［2］
+            return length;
+        } catch (IOException ioe) {
             return 0;
         }
     }

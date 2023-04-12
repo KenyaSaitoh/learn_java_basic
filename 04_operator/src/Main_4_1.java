@@ -28,6 +28,9 @@ public class Main_4_1 {
             double d1 = 5;
             double d2 = 2;
             double val = d1 / d2;
+            double val2 = (double) 5 / (double) 2;
+            System.out.println(val);
+            System.out.println(val2);
         }
         {
             System.out.println("***** snippet_7 *****");

@@ -24,7 +24,7 @@ public class Main_3_1 {
         {
             System.out.println("***** snippet_6 *****");
             int x = 10;
-            x = 20; // 変数xに20が代入される
+            x = 20; // 変数xに20が格納される
         }
         {
             System.out.println("***** snippet_7 *****");

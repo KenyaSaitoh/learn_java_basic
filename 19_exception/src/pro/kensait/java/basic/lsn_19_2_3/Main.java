@@ -8,9 +8,9 @@ import java.nio.file.Paths;
 public class Main {
     public static void main(String[] args) throws Exception {
         Path path = Paths.get("foo.txt");
-        try (BufferedReader br = Files.newBufferedReader(path)) { //［1］
+        try (BufferedReader br = Files.newBufferedReader(path)) {
             String line;
-            while ((line = br.readLine()) != null) { //［2］
+            while ((line = br.readLine()) != null) {
                 System.out.println(line);
             }
         }
