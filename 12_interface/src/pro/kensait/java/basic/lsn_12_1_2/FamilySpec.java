@@ -1,6 +1,6 @@
 package pro.kensait.java.basic.lsn_12_1_2;
 
-public interface FamilySpec {
+interface FamilySpec {
     // 家族会員を取得する【①】
     CustomerBase[] getFamily();
     

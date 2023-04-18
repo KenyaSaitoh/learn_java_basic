@@ -1,6 +1,6 @@
 package pro.kensait.java.basic.lsn_12_1_2;
 
-public interface NameAggregator {
+interface NameAggregator {
     String getName(); // 名前を取得する
     String getAddress() ; // 住所を取得する
     int getPoint(); // ポイントを取得する
