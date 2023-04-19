@@ -8,6 +8,7 @@ public class Main_Compare {
             String str2 = "foo_bar_fooBAR";
             boolean result = str1.equalsIgnoreCase(str2);
             System.out.println(result);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_2 *****");
@@ -15,6 +16,7 @@ public class Main_Compare {
             String str2 = "Foobar";
             int result = str1.compareTo(str2);
             System.out.println(0 < result);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_3 *****");
@@ -22,6 +24,7 @@ public class Main_Compare {
             String str2 = "Foobar";
             int result = str1.compareToIgnoreCase(str2);
             System.out.println(result < 0);
+            System.out.println("=> end");
         }
     }
 }

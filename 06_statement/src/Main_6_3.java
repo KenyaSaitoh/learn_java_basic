@@ -8,6 +8,7 @@ public class Main_6_3 {
             for (int i = 0; i < 10; i++) {
                 System.out.println("繰り返し, カウンタ変数 => " + i);
             }
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_2 *****");
@@ -15,6 +16,7 @@ public class Main_6_3 {
             for (int i = 0; i < 10; i++) {
                 sum += i + 1;
             }
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_3 *****");
@@ -22,6 +24,7 @@ public class Main_6_3 {
             for (int i = 1; i <= 10; i++) {
                 sum += i;
             }
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_4 *****");
@@ -30,6 +33,7 @@ public class Main_6_3 {
                 System.out.println("繰り返し, カウンタ変数 => " + i);
                 i++;
             }
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_5 *****");
@@ -37,7 +41,8 @@ public class Main_6_3 {
             while (total < 10000) {
                 total = total * 5;
             }
-            System.out.println(total); 
+            System.out.println(total);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_6 *****");
@@ -47,6 +52,7 @@ public class Main_6_3 {
                 String name = st.nextToken();
                 System.out.println(name);
             }
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_7 *****");
@@ -55,6 +61,7 @@ public class Main_6_3 {
                 total = total * 5;
             } while (total < 10000);
             System.out.println(total);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_8 *****");
@@ -67,6 +74,7 @@ public class Main_6_3 {
                 sum += i + 1;
             }
             System.out.println(sum);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_9 *****");
@@ -78,6 +86,7 @@ public class Main_6_3 {
                 }
             }
             System.out.println(sum);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_10 *****");
@@ -89,6 +98,7 @@ public class Main_6_3 {
                     break;
                 }
             }
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_11 *****");
@@ -96,6 +106,7 @@ public class Main_6_3 {
             while (flag) {
                 // 繰り返される
             }
+            System.out.println("=> end");
         }
     }
 }

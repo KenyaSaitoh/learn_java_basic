@@ -12,6 +12,7 @@ public class Main {
             Date birthday = cal.getTime();
             Person alice = new Person("Alice", 25, birthday);
             System.out.println(alice);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_2 *****");
@@ -21,6 +22,7 @@ public class Main {
             Person alice = new Person("Alice", 25, birthday);
             String birthdayStr = alice.getBirthDayStr();
             System.out.println(birthdayStr);
+            System.out.println("=> end");
         }
     }
 }

@@ -7,12 +7,14 @@ public class Main_Substring {
             String str1 = "Foo_Bar_Foobar";
             String str2 = str1.substring(4);
             System.out.println(str2);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_2 *****");
             String str1 = "Foo_Bar_Foobar";
             String str2 = str1.substring(4, 7);
             System.out.println(str2);
+            System.out.println("=> end");
         }
     }
 }

@@ -8,6 +8,7 @@ public class Main {
             CustomerType ct = // "一般顧客"の列挙子が決まる
                     CustomerType.valueOf(customerTypeName);
             System.out.println(ct);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_2 *****");
@@ -20,6 +21,7 @@ public class Main {
                 }
             }
             System.out.println(ct);
+            System.out.println("=> end");
         }
     }
 }

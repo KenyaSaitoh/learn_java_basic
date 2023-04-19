@@ -7,6 +7,7 @@ public class Main {
             String str = "100"; // 文字列"100"
             int value = Integer.parseInt(str); // 数値100
             System.out.println(value);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_2 *****");
@@ -14,6 +15,7 @@ public class Main {
             Integer value2 = 10;
             boolean flag = value1.equals(value2);
             System.out.println(flag);
+            System.out.println("=> end");
         }
     }
 }

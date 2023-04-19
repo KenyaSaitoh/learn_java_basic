@@ -14,6 +14,7 @@ public class Main {
             Locale locale3 = new Locale("en", "US"); // 「英語とアメリカ」
             Locale locale4 = new Locale("en", "CA"); // 「英語とカナダ」
             Locale locale5 = new Locale("fr", "CA"); // 「フランス語とカナダ」
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_2 *****");
@@ -22,6 +23,7 @@ public class Main {
             Locale locale3 = Locale.US; // 「英語とアメリカ」
             Locale locale4 = Locale.CANADA; // 「英語とカナダ」
             Locale locale5 = Locale.CANADA_FRENCH; // 「フランス語とカナダ」
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_3 *****");
@@ -29,6 +31,7 @@ public class Main {
             System.out.println(locale.getLanguage());
             System.out.println(locale.getCountry());
             System.out.println(locale.toLanguageTag());
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_4 *****");
@@ -38,6 +41,7 @@ public class Main {
             int age = Integer.parseInt(rb.getString("age"));
             String address = rb.getString("address");
             System.out.println(name + ", " + age + ", " + address);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_5 *****");
@@ -50,6 +54,7 @@ public class Main {
             System.out.println(str1);
             System.out.println(str2);
             System.out.println(str3);
+            System.out.println("=> end");
         }
     }
 }

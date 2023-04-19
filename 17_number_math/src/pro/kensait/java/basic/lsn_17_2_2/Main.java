@@ -18,6 +18,7 @@ public class Main {
             System.out.println(val1);
             System.out.println(val2);
             System.out.println(val3);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_2 *****");
@@ -29,6 +30,7 @@ public class Main {
             } catch (ParseException pe) {
                 new RuntimeException(pe);
             }
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_3 *****");
@@ -41,6 +43,7 @@ public class Main {
             } catch (ParseException pe) {
                 new RuntimeException(pe);
             }
+            System.out.println("=> end");
         }
     }
 }

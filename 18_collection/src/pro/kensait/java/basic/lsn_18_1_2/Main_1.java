@@ -10,18 +10,22 @@ public class Main_1 {
         {
             System.out.println("***** snippet_1 *****");
             List<String> list = new ArrayList<String>();  // OKだが右辺は型推論可能
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_2 *****");
             List<String> list = new ArrayList<>(); // OK（基本形）
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_3 *****");
             ArrayList<String> list = new ArrayList<>(); // NG（左辺はインタフェースで宣言）
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_4 *****"); // NG（型パラメータを使う）
             List list = new ArrayList();
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_5 *****");
@@ -30,6 +34,7 @@ public class Main_1 {
             list.add("bar");
             list.add("baz");
             System.out.println(list);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_6 *****");
@@ -39,6 +44,7 @@ public class Main_1 {
             list.add("baz");
             list.add(1, "qux");
             System.out.println(list);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_7 *****");
@@ -48,6 +54,7 @@ public class Main_1 {
             list.add("baz");
             list.set(1, "qux");
             System.out.println(list);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_8 *****");
@@ -57,6 +64,7 @@ public class Main_1 {
             list.add("baz");
             String str = list.get(0);
             System.out.println(str);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_9 *****");
@@ -68,6 +76,7 @@ public class Main_1 {
                 // 変数strに対して何らかの処理を行う
                 System.out.println(str);
             }
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_10 *****");
@@ -81,6 +90,7 @@ public class Main_1 {
                 // 変数strに対して何らかの処理を行う
                 System.out.println(str);
             }
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_11 *****");
@@ -90,6 +100,7 @@ public class Main_1 {
             list.add("baz");
             list.remove(1);
             System.out.println(list);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_12 *****");
@@ -99,6 +110,7 @@ public class Main_1 {
             list.add("baz");
             boolean flag = list.remove("foo");
             System.out.println(list);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_13 *****");
@@ -108,6 +120,7 @@ public class Main_1 {
             list.add("baz");
             list.clear();
             System.out.println(list);
+            System.out.println("=> end");
         }
     }
 }

@@ -14,6 +14,7 @@ public class Main {
             LocalDate dueDate = LocalDate.of(2023, 3, 31);
             long remaining = ChronoUnit.DAYS.between(today, dueDate);
             System.out.println("残日数 => " + remaining);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_2 *****");
@@ -21,6 +22,7 @@ public class Main {
             LocalTime now = LocalTime.of(15, 20);
             long elapsed = ChronoUnit.MINUTES.between(start, now);
             System.out.println("経過時間（分） => " + elapsed);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_3 *****");
@@ -30,6 +32,7 @@ public class Main {
             System.out.println(period.getYears() + "年" +
                     period.getMonths() + "カ月" +
                     period.getDays() + "日");
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_4 *****");
@@ -38,6 +41,7 @@ public class Main {
             Duration duration = Duration.between(now, timeLimit);
             System.out.println(duration.toHoursPart() + "時間" +
                     duration.toMinutesPart() + "分");
+            System.out.println("=> end");
         }
     }
 }

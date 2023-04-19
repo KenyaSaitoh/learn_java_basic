@@ -11,6 +11,7 @@ public class Main_Collections {
             List<Integer> list = new ArrayList<>();
             Collections.addAll(list, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
             System.out.println(list);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_2 *****");
@@ -18,6 +19,7 @@ public class Main_Collections {
             Collections.addAll(list, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
             Collections.reverse(list);
             System.out.println(list);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_3 *****");
@@ -25,6 +27,7 @@ public class Main_Collections {
             Collections.addAll(list, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
             Collections.rotate(list, -3);
             System.out.println(list);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_4 *****");
@@ -32,6 +35,7 @@ public class Main_Collections {
             Collections.addAll(list, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
             Collections.shuffle(list);
             System.out.println(list);
+            System.out.println("=> end");
         }
     }
 }

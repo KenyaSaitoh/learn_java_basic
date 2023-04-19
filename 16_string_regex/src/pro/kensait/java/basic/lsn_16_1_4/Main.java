@@ -8,6 +8,7 @@ public class Main {
             for (int i = 0; i < 100000; i++) {
                 str = str + "A";
             }
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_2 *****");
@@ -16,6 +17,7 @@ public class Main {
                 sb.append("A");
             }
             String str = sb.toString();
+            System.out.println("=> end");
         }
     }
 }

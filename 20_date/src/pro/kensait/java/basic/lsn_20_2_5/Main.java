@@ -14,12 +14,14 @@ public class Main {
             ZonedDateTime dateTime = ZonedDateTime.of(2022, 11, 5, 15, 20, 0, 0,
                     ZoneId.systemDefault());
             System.out.println(dateTime);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_2 *****");
             ZonedDateTime tkyDateTime = ZonedDateTime.of(2022, 11, 5, 15, 20, 0, 0,
                     ZoneId.of("Asia/Tokyo"));
             System.out.println(tkyDateTime);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_3 *****");
@@ -29,6 +31,7 @@ public class Main {
             System.out.println(nycDateTime);
             long diff = ChronoUnit.HOURS.between(tkyDateTime, nycDateTime);
             System.out.println(diff);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_4 *****");
@@ -37,6 +40,7 @@ public class Main {
             Instant instant = zdt.toInstant();
             Date date = Date.from(instant);
             System.out.println(date);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_5 *****");
@@ -44,6 +48,7 @@ public class Main {
             Instant instant = date.toInstant();
             LocalDateTime ldt = LocalDateTime.ofInstant(instant, ZoneId.systemDefault());
             System.out.println(ldt);
+            System.out.println("=> end");
         }
     }
 }

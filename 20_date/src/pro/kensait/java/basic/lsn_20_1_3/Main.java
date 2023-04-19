@@ -12,6 +12,7 @@ public class Main {
             Date date = new Date();
             String dateStr = df.format(date);
             System.out.println(dateStr);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_2 *****");
@@ -22,6 +23,7 @@ public class Main {
             } catch (ParseException pe) {
                 new RuntimeException(pe);
             }
+            System.out.println("=> end");
         }
     }
 }

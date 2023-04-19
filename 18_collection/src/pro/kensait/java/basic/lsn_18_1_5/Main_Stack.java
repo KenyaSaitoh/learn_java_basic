@@ -11,6 +11,7 @@ public class Main_Stack {
             deque.offerFirst("foo");
             deque.offerFirst("bar");
             deque.offerFirst("baz");
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_2 *****");
@@ -20,6 +21,7 @@ public class Main_Stack {
             deque.offerFirst("baz");
             String element = deque.pollFirst();
             System.out.println(element);
+            System.out.println("=> end");
         }
     }
 }

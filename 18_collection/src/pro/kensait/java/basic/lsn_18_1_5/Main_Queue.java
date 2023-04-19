@@ -9,6 +9,7 @@ public class Main_Queue {
         {
             System.out.println("***** snippet_1 *****");
             Deque<String> deque = new ArrayDeque<>();
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_2 *****");
@@ -16,6 +17,7 @@ public class Main_Queue {
             deque.offerLast("foo");
             deque.offerLast("bar");
             deque.offerLast("baz");
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_3 *****");
@@ -25,6 +27,7 @@ public class Main_Queue {
             deque.offerLast("baz");
             String element = deque.pollFirst();
             System.out.println(element);
+            System.out.println("=> end");
         }
     }
 }

@@ -13,7 +13,6 @@ public class Main {
     }
 
     private static boolean nullCheck1(String str1, String str2) {
-        System.out.println("***** snippet_1 *****");
         if (str1 == null) {
             if (str2 != null) {
                 return false;
@@ -25,7 +24,6 @@ public class Main {
     }
 
     private static boolean nullCheck2(String str1, String str2) {
-        System.out.println("***** snippet_2 *****");
         if (str1 == null && str2 != null) {
             return false;
         } else if (!str1.equals(str2)) {

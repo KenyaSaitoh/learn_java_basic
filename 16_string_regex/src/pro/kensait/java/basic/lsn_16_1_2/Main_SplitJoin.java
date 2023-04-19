@@ -9,12 +9,14 @@ public class Main_SplitJoin {
             for (String s : strArray) {
                 System.out.println(s);
             }
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_2 *****");
             String[] strArray = {"foo", "bar", "baz"};
             String str = String.join("#", strArray);
             System.out.println(str);
+            System.out.println("=> end");
         }
     }
 }

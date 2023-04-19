@@ -8,9 +8,9 @@ public class Main_Switch_3 {
 
         int deliveryFee = 0;
         switch (customerType) {
-            case 0, 1 -> deliveryFee = 900; //［1］
-            case 2 -> deliveryFee = 600; //［2］
-            case 3 -> { //［3］
+            case 0, 1 -> deliveryFee = 900;
+            case 2 -> deliveryFee = 600;
+            case 3 -> {
                 System.out.println("ダイヤモンド会員の場合");
                 deliveryFee = 0;
             }

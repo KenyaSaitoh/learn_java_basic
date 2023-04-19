@@ -9,12 +9,14 @@ public class Main {
             System.out.println("***** snippet_1 *****");
             Calendar cal = Calendar.getInstance();
             System.out.println("現在日時 => " + cal);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_2 *****");
             Calendar cal = Calendar.getInstance();
             cal.set(2022, 10, 5, 15, 20);
             System.out.println("現在日時 => " + cal.getTime());
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_3 *****");
@@ -23,6 +25,7 @@ public class Main {
             int month = cal.get(Calendar.MONTH) + 1;
             int day = cal.get(Calendar.DAY_OF_MONTH);
             System.out.println(year + "-" + month + "-" + day);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_4 *****");
@@ -30,6 +33,7 @@ public class Main {
             cal.set(2022, 10, 5, 15, 20);
             cal.add(Calendar.DAY_OF_MONTH, -10);
             System.out.println("10日前 => " + cal.getTime());
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_5 *****");
@@ -38,6 +42,7 @@ public class Main {
             cal.add(Calendar.MONTH, -1);
             cal.set(Calendar.DATE, 1);
             System.out.println("前月の月初日 => " + cal.getTime());
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_6 *****");
@@ -46,6 +51,7 @@ public class Main {
             target.set(2022, 3, 10);
             int result = current.compareTo(target);
             System.out.println(result);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_7 *****");
@@ -56,12 +62,14 @@ public class Main {
             time2.set(2022, 3, 10);
             int result = time1.compareTo(time2);
             System.out.println(result);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_8 *****");
             Calendar cal = Calendar.getInstance();
             Date now = cal.getTime();
             System.out.println(now);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_9 *****");
@@ -69,6 +77,7 @@ public class Main {
             Calendar cal = Calendar.getInstance();
             cal.setTime(now);
             System.out.println(cal);
+            System.out.println("=> end");
         }
     }
 }

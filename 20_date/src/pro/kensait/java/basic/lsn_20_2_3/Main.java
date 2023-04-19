@@ -12,11 +12,13 @@ public class Main {
             System.out.println("***** snippet_1 *****");
             LocalDate date = LocalDate.of(2022, 4, 10);
             System.out.println(date);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_2 *****");
             LocalTime time = LocalTime.of(8, 40);
             System.out.println(time);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_3 *****");
@@ -25,6 +27,7 @@ public class Main {
             LocalTime time = dateTime.toLocalTime();
             System.out.println(date);
             System.out.println(time);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_4 *****");
@@ -32,6 +35,7 @@ public class Main {
             LocalTime time = LocalTime.of(15, 20);
             LocalDateTime dateTime = LocalDateTime.of(date, time);
             System.out.println(dateTime);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_5 *****");
@@ -46,6 +50,7 @@ public class Main {
             System.out.println(date3);
             System.out.println(date4);
             System.out.println(date5);
+            System.out.println("=> end");
         }
     }
 }

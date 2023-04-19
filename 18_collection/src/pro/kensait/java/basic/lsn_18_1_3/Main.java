@@ -11,6 +11,7 @@ public class Main {
         {
             System.out.println("***** snippet_1 *****");
             Set<String> set = new HashSet<>();
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_2 *****");
@@ -19,6 +20,7 @@ public class Main {
             set.add("bar");
             set.add("baz");
             System.out.println(set);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_3 *****");
@@ -30,6 +32,7 @@ public class Main {
             Person alice2 = new Person("Alice", 26, "female");
             set.add(alice2); // どうなる？
             System.out.println(set);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_4 *****");
@@ -39,6 +42,7 @@ public class Main {
             set.add("baz");
             boolean flag = set.remove("foo");
             System.out.println(set);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_5 *****");
@@ -48,6 +52,7 @@ public class Main {
             set.add("baz");
             set.clear();
             System.out.println(set);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_6 *****");
@@ -59,6 +64,7 @@ public class Main {
             System.out.println(list);
             Set<String> set = new HashSet<>(list);
             System.out.println(set);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_7 *****");
@@ -68,6 +74,7 @@ public class Main {
             set.add("baz");
             List<String> list = new ArrayList<>(set);
             System.out.println(list);
+            System.out.println("=> end");
         }
     }
 }

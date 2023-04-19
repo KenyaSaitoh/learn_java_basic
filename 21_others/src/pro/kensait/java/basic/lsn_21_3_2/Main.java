@@ -18,6 +18,7 @@ public class Main {
             int age = Integer.parseInt(props.getProperty("age"));
             String address = props.getProperty("address");
             System.out.println(name + ", " + age + ", " + address);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_2 *****");
@@ -26,6 +27,7 @@ public class Main {
             int age = Integer.parseInt(rb.getString("age"));
             String address = rb.getString("address");
             System.out.println(name + ", " + age + ", " + address);
+            System.out.println("=> end");
         }
     }
 }

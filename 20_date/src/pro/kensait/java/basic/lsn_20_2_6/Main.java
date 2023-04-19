@@ -13,17 +13,20 @@ public class Main {
             String dateStr2 = date
                     .format(DateTimeFormatter.ofPattern("y/MM/dd HH:mm:ss:n"));
             System.out.println(dateStr2);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_2 *****");
             LocalDateTime date = LocalDateTime.parse("2022-04-05T08:05:03");
             System.out.println(date);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_3 *****");
             LocalDateTime date = LocalDateTime.parse("2022年4月5日 8時5分3秒",
                     DateTimeFormatter.ofPattern("y年M月d日 H時m分s秒"));
             System.out.println(date);
+            System.out.println("=> end");
         }
     }
 }

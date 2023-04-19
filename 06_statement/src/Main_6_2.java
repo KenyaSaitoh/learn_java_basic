@@ -12,6 +12,7 @@ public class Main_6_2 {
             if (customerType == GOLD_CUSTOMER) {
                 point += 100;
             }
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_2 *****");
@@ -19,6 +20,7 @@ public class Main_6_2 {
             if (isGoldCustomer) {
                 point += 100;
             }
+            System.out.println("=> end");
         }
     }
 }

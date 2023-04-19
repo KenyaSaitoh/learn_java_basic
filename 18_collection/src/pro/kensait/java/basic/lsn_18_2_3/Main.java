@@ -12,6 +12,7 @@ public class Main {
             Collections.addAll(list, "foo", "bar", "baz");
             List<String> il = Collections.unmodifiableList(list);
             System.out.println(il);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_2 *****");
@@ -19,6 +20,7 @@ public class Main {
             Collections.addAll(list, "foo", "bar", "baz");
             List<String> sl = Collections.synchronizedList(list);
             System.out.println(sl);
+            System.out.println("=> end");
         }
     }
 }

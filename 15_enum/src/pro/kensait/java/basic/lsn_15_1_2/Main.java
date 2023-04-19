@@ -8,6 +8,7 @@ public class Main {
             System.out.println(ct.name()); // "DIAMOND"
             System.out.println(ct.ordinal()); // 3
             System.out.println(ct.toString()); // "DIAMOND"
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_2 *****");
@@ -15,6 +16,7 @@ public class Main {
             if (alice.getCustomerType() == CustomerType.PLATINUM) {
                 System.out.println("プラチナ会員です");
             }
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_3 *****");
@@ -22,6 +24,7 @@ public class Main {
             if (CustomerType.GOLD.ordinal() <= alice.getCustomerType().ordinal()) {
                 System.out.println("ゴールド会員以上です");
             }
+            System.out.println("=> end");
         }
     }
 }

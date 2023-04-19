@@ -8,6 +8,7 @@ public class Main_Condition {
             String str2 = "Bar";
             boolean result = str1.contains(str2);
             System.out.println(result);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_2 *****");
@@ -15,6 +16,7 @@ public class Main_Condition {
             String str2 = "Foo";
             boolean result = str1.startsWith(str2);
             System.out.println(result);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_3 *****");
@@ -22,18 +24,21 @@ public class Main_Condition {
             String str2 = "bar";
             boolean result = str1.endsWith(str2);
             System.out.println(result);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_4 *****");
             String str = "";
             boolean result = str.isEmpty();
             System.out.println(result);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_5 *****");
             String str = "   ";
             boolean result = str.isBlank();
             System.out.println(result);
+            System.out.println("=> end");
         }
     }
 }

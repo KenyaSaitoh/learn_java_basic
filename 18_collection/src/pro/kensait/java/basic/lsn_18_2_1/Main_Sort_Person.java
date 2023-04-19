@@ -17,6 +17,7 @@ public class Main_Sort_Person {
             list.add(carol);
             Collections.sort(list);
             System.out.println(list);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_2 *****");
@@ -29,6 +30,7 @@ public class Main_Sort_Person {
             list.add(carol);
             Collections.sort(list, new PersonNameComparator());
             System.out.println(list);
+            System.out.println("=> end");
         }
     }
 }

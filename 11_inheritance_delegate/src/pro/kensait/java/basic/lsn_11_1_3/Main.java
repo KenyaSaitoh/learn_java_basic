@@ -12,6 +12,7 @@ public class Main {
             }
             alice.addPoint(totalPrice);
             System.out.println(alice.getPoint());
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_2 *****");
@@ -23,6 +24,7 @@ public class Main {
             }
             bob.addPoint(totalPrice);
             System.out.println(bob.getPoint());
+            System.out.println("=> end");
         }
     }
 }

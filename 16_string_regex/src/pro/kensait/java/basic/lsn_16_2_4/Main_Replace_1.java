@@ -12,12 +12,14 @@ public class Main_Replace_1 {
             Matcher matcher = pattern.matcher(before);
             String after = matcher.replaceAll("x");
             System.out.println(before + " => " + after);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_2 *****");
             String before = "FooCompany";
             String after = before.replaceAll("[a-z]", "x");
             System.out.println(before + " => " + after);
+            System.out.println("=> end");
         }
     }
 }

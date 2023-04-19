@@ -14,6 +14,7 @@ public class Main_Sort_Integer {
             list.add(3);
             Collections.sort(list);
             System.out.println(list);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_2 *****");
@@ -23,6 +24,7 @@ public class Main_Sort_Integer {
             list.add(3);
             Collections.sort(list, Collections.reverseOrder());
             System.out.println(list);
+            System.out.println("=> end");
         }
     }
 }

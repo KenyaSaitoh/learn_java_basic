@@ -10,6 +10,7 @@ public class Main_1 {
             System.out.println(val);
             System.out.println(val.precision());
             System.out.println(val.scale());
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_2 *****");
@@ -17,6 +18,7 @@ public class Main_1 {
             System.out.println(val);
             System.out.println(val.precision());
             System.out.println(val.scale());
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_3 *****");
@@ -24,6 +26,7 @@ public class Main_1 {
             System.out.println(val);
             System.out.println(val.precision());
             System.out.println(val.scale());
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_5 *****");
@@ -31,6 +34,7 @@ public class Main_1 {
             System.out.println(val);
             System.out.println(val.precision());
             System.out.println(val.scale());
+            System.out.println("=> end");
         }
     }
 }

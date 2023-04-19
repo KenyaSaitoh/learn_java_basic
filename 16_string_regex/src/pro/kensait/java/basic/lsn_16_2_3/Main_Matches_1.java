@@ -16,6 +16,7 @@ public class Main_Matches_1 {
             System.out.println("matches => " + matches);
             System.out.println("lookingAt => " + lookingAt);
             System.out.println("group => " + group);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_2 *****");
@@ -28,6 +29,7 @@ public class Main_Matches_1 {
             System.out.println("matches => " + matches);
             System.out.println("lookingAt => " + lookingAt);
             System.out.println("group => " + group);
+            System.out.println("=> end");
         }
     }
 }

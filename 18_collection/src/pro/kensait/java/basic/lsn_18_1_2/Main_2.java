@@ -14,6 +14,7 @@ public class Main_2 {
             }
             List<Integer> subList = list.subList(3, 7);
             System.out.println(subList);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_2 *****");
@@ -25,6 +26,7 @@ public class Main_2 {
             list2.add("qux");
             list1.addAll(list2);
             System.out.println(list1);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_3 *****");
@@ -32,6 +34,7 @@ public class Main_2 {
             list.set(1, "qux"); // これはOK
             // list.add("qux"); // 実行時エラー
             System.out.println(list);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_4 *****");
@@ -39,36 +42,42 @@ public class Main_2 {
             // list.set(1, "qux"); // 実行時エラー
             // list.add("qux"); // 実行時エラー
             System.out.println(list);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_5 *****");
             List<String> list = List.of("foo", "bar", "baz");
             int s = list.size();
             System.out.println(s);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_6 *****");
             List<String> list = List.of("foo", "bar", "baz");
             boolean flag = list.contains("foo");
             System.out.println(flag);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_7 *****");
             List<String> list = new ArrayList<>();
             boolean flag = list.isEmpty();
             System.out.println(flag);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_8 *****");
             List<String> list = List.of("foo", "bar", "baz");
             String[] strArray = list.toArray(new String[0]);
             for (String str : strArray) System.out.println(str);
+            System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_9 *****");
             String[] strArray = {"foo", "bar", "baz"};
             List<String> list = Arrays.asList(strArray);
             System.out.println(list);
+            System.out.println("=> end");
         }
     }
 }
