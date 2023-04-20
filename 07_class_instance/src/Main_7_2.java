@@ -38,8 +38,8 @@ public class Main_7_2 {
         }
         {
             System.out.println("***** snippet_6 *****");
-            Person p1 = new Person("Alice", 25);
-            Person p2 = new Person("Bob", 35);
+            Person p1 = new Person("Alice", 25); //【1】
+            Person p2 = new Person("Bob", 35); //【2】
             System.out.println("=> end");
         }
     }

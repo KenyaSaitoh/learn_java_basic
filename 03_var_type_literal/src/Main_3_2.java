@@ -51,8 +51,8 @@ public class Main_3_2 {
         }
         {
             System.out.println("***** snippet_9 *****");
-            String str1 = "こんにちは！私はAlice、25歳です。日本語を話せます。";
-            String str2 = "こんにちは！私はAlice、25歳です。" +
+            String str1 = "こんにちは！私はAlice、25歳です。日本語を話せます。"; //【1】
+            String str2 = "こんにちは！私はAlice、25歳です。" + //【2】
                     "日本語を話せます。";
             System.out.println("=> end");
         }

@@ -9,7 +9,7 @@ import java.nio.file.Paths;
 public class Main {
     public static void main(String[] args) {
         Path path = Paths.get("foo.txt");
-        BufferedReader br = null;
+        BufferedReader br = null; //【1】
         try {
             // ファイルをオープンし、読み込みのためのBufferedReaderを取得
             br = Files.newBufferedReader(path);

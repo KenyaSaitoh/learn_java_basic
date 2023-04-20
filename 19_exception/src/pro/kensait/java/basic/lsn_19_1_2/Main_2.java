@@ -11,7 +11,7 @@ public class Main_2 {
         int val2 = Integer.parseInt(new Scanner(System.in).nextLine());
 
         try { //【1】
-            int answer = val1 / val2; //【2】
+            int answer = val1 / val2; //【2】除算→例外発生の可能性
             System.out.println(answer);
         } catch (ArithmeticException ae) { //【3】
             System.out.println("ゼロ除算発生, msg => " + ae.getMessage()); //【4】

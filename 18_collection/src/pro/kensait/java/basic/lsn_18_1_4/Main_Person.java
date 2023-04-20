@@ -8,7 +8,7 @@ public class Main_Person {
         Person alice = new Person(101, "Alice", 25, "female");
         Person bob = new Person(102, "Bob", 35, "male");
         Person carol = new Person(103, "Carol", 30, "female");
-        Map<Integer, Person> personMap = new HashMap<>();
+        Map<Integer, Person> personMap = new HashMap<>(); //【1】
         personMap.put(alice.getId(), alice);
         personMap.put(bob.getId(), bob);
         personMap.put(carol.getId(), carol);

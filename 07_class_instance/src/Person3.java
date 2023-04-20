@@ -73,7 +73,7 @@ class Person3 {
 
     String createGreetMessage(String language, boolean isMorning) {
         if (isMorning) {
-            return createGreetMessage(language); // returnに直接メソッド呼び出しを書く
+            return createGreetMessage(language); //【1】
         }
         String message = null;
         if (language.equals("JAPANESE")) {

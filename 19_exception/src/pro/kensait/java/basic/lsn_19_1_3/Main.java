@@ -9,7 +9,7 @@ public class Main {
         int param = Integer.parseInt(new Scanner(System.in).nextLine());
 
         if (param < 0) {
-            throw new IllegalArgumentException("引数が0未満");
+            throw new IllegalArgumentException("引数が0未満"); //【1】
         }
         int answer = param * 2;
         System.out.println(answer);

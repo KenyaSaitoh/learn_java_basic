@@ -35,11 +35,11 @@ public class Person {
     public void setBirthDay(Date birthDay) {
         this.birthDay = birthDay;
     }
-    public String getBirthDayStr() {
+    public String getBirthDayStr() { //【1】生年月日を文字列で取得
         SimpleDateFormat df = new SimpleDateFormat("yyyy年M月d日");
         return df.format(birthDay);
     }
-    public void setBirthDayStr(String birthDayStr) {
+    public void setBirthDayStr(String birthDayStr) { //【2】生年月日を文字列で設定
         SimpleDateFormat df = new SimpleDateFormat("yyyy年M月d日");
         try {
         this.birthDay = df.parse(birthDayStr);

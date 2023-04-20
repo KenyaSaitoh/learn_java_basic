@@ -10,7 +10,7 @@ public class Main_1 {
         System.out.print("val2? => ");
         int val2 = Integer.parseInt(new Scanner(System.in).nextLine());
 
-        int answer = val1 / val2; // 除算
+        int answer = val1 / val2; //【1】除算→例外発生の可能性
         System.out.println(answer); // 答えを表示
     }
 }

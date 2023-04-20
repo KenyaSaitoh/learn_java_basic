@@ -62,9 +62,9 @@ public class Main {
             map.put(101, "Alice");
             map.put(102, "Bob");
             map.put(103, "Carol");
-            Collection<String> values = map.values();
-            List<String> list = new ArrayList<>(values);
-            Set<String> set = new HashSet<>(values);
+            Collection<String> values = map.values(); //【1】
+            List<String> list = new ArrayList<>(values); //【2】
+            Set<String> set = new HashSet<>(values); //【3】
             System.out.println(list);
             System.out.println(set);
             System.out.println("=> end");
@@ -75,9 +75,9 @@ public class Main {
             map.put(101, "Alice");
             map.put(102, "Bob");
             map.put(103, "Carol");
-            Set<Integer> keySet = map.keySet();
-            for (Integer key : keySet) {
-                String value = map.get(key);
+            Set<Integer> keySet = map.keySet(); //【1】
+            for (Integer key : keySet) { //【2】
+                String value = map.get(key); //【3】
                 System.out.println(value);
             }
             System.out.println("=> end");
@@ -88,10 +88,10 @@ public class Main {
             map.put(101, "Alice");
             map.put(102, "Bob");
             map.put(103, "Carol");
-            Set<Map.Entry<Integer, String>> entrySet = map.entrySet();
-            for (Map.Entry<Integer, String> entry : entrySet) {
+            Set<Map.Entry<Integer, String>> entrySet = map.entrySet(); //【1】
+            for (Map.Entry<Integer, String> entry : entrySet) { //【2】
                 System.out.println(entry.getKey() + " => " +
-                        entry.getValue());
+                        entry.getValue()); //【3】
             }
             System.out.println("=> end");
         }

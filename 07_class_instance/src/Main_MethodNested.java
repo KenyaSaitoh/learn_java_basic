@@ -3,11 +3,11 @@ public class Main_MethodNested {
         System.out.println(getGreeting(getUpperCase("Alice")));
     }
 
-    private static String getUpperCase(String name) {
+    static String getUpperCase(String name) { //【1】
         return name.toUpperCase();
     }
 
-    private static String getGreeting(String name) {
+    static String getGreeting(String name) { //【2】
         return "Hello, " + name;
     }
 }

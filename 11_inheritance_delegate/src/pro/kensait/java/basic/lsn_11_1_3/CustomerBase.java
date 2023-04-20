@@ -34,7 +34,7 @@ public abstract class CustomerBase {
         this.point = point;
     }
 
-    // 購入金額の上限をチェックする（共通実装）
+    // 【1】購入金額の上限をチェックする（共通実装）
     public boolean overTotalPrice(int totalPrice) {
         if (1_000_000 < totalPrice) {
             return true;
@@ -42,6 +42,6 @@ public abstract class CustomerBase {
         return false;
     }
 
-    // ポイントを加算する（抽象メソッド）
+    // 【2】ポイントを加算する（抽象メソッド）
     public abstract void addPoint(int value);
 }

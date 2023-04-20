@@ -35,9 +35,9 @@ public class Person implements Cloneable {
         return "Person [name=" + name + ", age=" + age + ", address=" + address + "]";
     }
     @Override
-    public Person clone() throws CloneNotSupportedException {
-        Person copy = (Person)super.clone();
-        copy.address = this.address.clone();
+    public Person clone() throws CloneNotSupportedException { //【1】
+        Person copy = (Person) super.clone(); //【2】
+        copy.address = this.address.clone(); //【3】
         return copy;
     }
 }

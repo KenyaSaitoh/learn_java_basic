@@ -35,9 +35,9 @@ public class Main_3_1 {
         }
         {
             System.out.println("***** snippet_7 *****");
-            int x = 10, y = 20;
-            int result = x + y;
-            System.out.println(result);
+            int x = 10, y = 20; //【1】
+            int result = x + y; //【2】
+            System.out.println(result); //【3】
             System.out.println("=> end");
         }
         {
@@ -50,7 +50,9 @@ public class Main_3_1 {
             System.out.println("***** snippet_9 *****");
             double d1 = 0.1 + 0.2;
             double d2 = 0.3;
-            if (d1 == d2) {} // この判定はfalseになる
+            if (d1 == d2) { // この判定はfalseになる
+                System.out.println("d1とd2が一致しました!");
+            }
             System.out.println("=> end");
         }
         {
@@ -66,9 +68,9 @@ public class Main_3_1 {
         }
         {
             System.out.println("***** snippet_12 *****");
-            char c1 = 'ア';
-            char c2 = 0x30A2;
-            char c3 = 12450;
+            char c1 = 'ア'; //【1】
+            char c2 = 0x30A2; //【2】
+            char c3 = 12450; //【3】
             System.out.println("=> end");
         }
         {

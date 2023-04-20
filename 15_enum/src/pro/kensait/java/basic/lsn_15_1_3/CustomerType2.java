@@ -1,7 +1,7 @@
 package pro.kensait.java.basic.lsn_15_1_3;
 
 public enum CustomerType2 {
-    // 列挙子
+    //【1】列挙子
     GENERAL("一般会員", 900),
     GOLD("ゴールド会員", 900),
     PLATINUM("プラチナ会員", 600),

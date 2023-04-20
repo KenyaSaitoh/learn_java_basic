@@ -2,18 +2,18 @@ package pro.kensait.java.basic.lsn_19_2_1;
 
 import java.math.BigDecimal;
 
-public class BalanceException extends Exception {
-    private BigDecimal balance;
-    public BalanceException(String message) {
+public class BalanceException extends Exception { //【1】
+    private BigDecimal balance; //【2】
+    public BalanceException(String message) { //【3】
         super(message);
     }
-    public BalanceException(Throwable cause) {
+    public BalanceException(Throwable cause) { //【4】
         super(cause);
     }
-    public BalanceException(String message, Throwable cause) {
+    public BalanceException(String message, Throwable cause) { //【5】
         super(message, cause);
     }
-    public BalanceException(String message, BigDecimal balance) {
+    public BalanceException(String message, BigDecimal balance) { //【6】
         super(message);
         this.balance = balance;
     }

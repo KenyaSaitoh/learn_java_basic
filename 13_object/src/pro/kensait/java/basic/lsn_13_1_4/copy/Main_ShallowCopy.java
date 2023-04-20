@@ -6,7 +6,7 @@ public class Main_ShallowCopy {
         Person person = new Person("Alice", 25, address);
         Person copy = new Person(person.getName(), 
                 person.getAge(),
-                person.getAddress());
+                person.getAddress()); //【1】
         person.getAddress().setAddressLine("2-2-2");
         System.out.println(copy.getAddress());
     }

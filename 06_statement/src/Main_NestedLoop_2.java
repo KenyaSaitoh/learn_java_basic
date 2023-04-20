@@ -4,10 +4,10 @@ public class Main_NestedLoop_2 {
                 {90, 100, 100, 85}};
         int count = 0; // 100点取得者の数
         for (int i = 0; i < scoreTable.length; i++) {
-            for (int j = 0; j < scoreTable[i].length; j++) {
+            for (int j = 0; j < scoreTable[i].length; j++) { //【1】
                 if (scoreTable[i][j] == 100) {
-                    count++;
-                    break;
+                    count++; //【2】
+                    break; //【3】
                 }
             }
         }

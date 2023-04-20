@@ -9,11 +9,11 @@ public class Main_2 {
 
     void process() {
         Person person = new Person("Alice", 25, "中央区1-1-1");
-        updateAddress(person);
-        System.out.println(person); // 住所はどうなる？
+        updateAddress(person); //【1】
+        System.out.println(person); //【2】住所はどうなる？
     }
 
     void updateAddress(Person person) {
-        person.setAddress("中央区2-2-2");
+        person.setAddress("中央区2-2-2"); //【3】
     }
 }

@@ -36,8 +36,8 @@ public class Person implements Comparable<Person> {
     }
     @Override
     public int compareTo(Person other) {
-        if (age < other.getAge()) return -1;
-        if (other.getAge() < age) return 1;
-        return 0;
+        if (age < other.getAge()) return -1; //【1】
+        if (other.getAge() < age) return 1; //【2】
+        return 0; //【3】
     }
 }

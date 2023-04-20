@@ -26,10 +26,12 @@ public class Main {
         {
             System.out.println("***** snippet_3 *****");
             LocalDateTime dateTime = LocalDateTime.of(2022, 11, 5, 15, 20, 0, 0);
-            ZonedDateTime tkyDateTime = ZonedDateTime.of(dateTime, ZoneId.of("Asia/Tokyo"));
-            ZonedDateTime nycDateTime = ZonedDateTime.of(dateTime, ZoneId.of("America/New_York"));
+            ZonedDateTime tkyDateTime = ZonedDateTime.of(dateTime,
+                    ZoneId.of("Asia/Tokyo")); //【1】
+            ZonedDateTime nycDateTime = ZonedDateTime.of(dateTime,
+                    ZoneId.of("America/New_York")); //【2】
             System.out.println(nycDateTime);
-            long diff = ChronoUnit.HOURS.between(tkyDateTime, nycDateTime);
+            long diff = ChronoUnit.HOURS.between(tkyDateTime, nycDateTime); //【3】
             System.out.println(diff);
             System.out.println("=> end");
         }

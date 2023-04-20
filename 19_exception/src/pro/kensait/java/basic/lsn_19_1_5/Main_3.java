@@ -10,8 +10,8 @@ public class Main_3 {
                 throw new FileNotFoundException();
             }
             throw new MalformedURLException();
-        } catch (FileNotFoundException | MalformedURLException ex) {
-            System.out.println("例外発生, msg => " + ex.getMessage());
+        } catch (FileNotFoundException | MalformedURLException ex) { //【1】
+            System.out.println("例外発生, msg => " + ex.getMessage()); //【2】
         }
     }
 }

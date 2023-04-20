@@ -7,9 +7,9 @@ public class Main_If_3 {
         int totalPrice = Integer.parseInt(new Scanner(System.in).nextLine());
 
         int deliveryFee;
-        if (5000 <= totalPrice) {
+        if (5000 <= totalPrice) { //【1】
             deliveryFee = 600;
-        } else if (10000 <= totalPrice) {
+        } else if (10000 <= totalPrice) { //【2】
             deliveryFee = 300;
         } else {
             deliveryFee = 900;

@@ -4,7 +4,7 @@ public class Customer {
     // フィールド
     private Integer id;
     private String name;
-    private CustomerType customerType;
+    private CustomerType customerType; //【1】顧客種別
     // コンストラクタ
     public Customer(Integer id, String name, CustomerType customerType) {
         this.id = id;

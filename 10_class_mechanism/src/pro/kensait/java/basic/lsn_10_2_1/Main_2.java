@@ -6,8 +6,8 @@ public class Main_2 {
         Employee alice = new Employee(1, "Alice", sales, 300000);
         Employee bob = new Employee(2, "Bob", sales, 420000);
         Employee carol = new Employee(3, "Carol", sales, 380000);
-        Employee[] employees = { alice, bob, carol };
-        sales.setEmployees(employees);
+        Employee[] employees = {alice, bob, carol}; //【1】
+        sales.setEmployees(employees); //【2】
 
         employees = sales.getEmployees();
         for (Employee e : employees) {

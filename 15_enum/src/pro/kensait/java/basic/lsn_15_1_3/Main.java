@@ -12,11 +12,11 @@ public class Main {
         }
         {
             System.out.println("***** snippet_2 *****");
-            int customerTypeNum = 1; // "ゴールド顧客"
+            int customerTypeNum = 1; // ゴールド会員
             CustomerType ct = null;
-            for (CustomerType ct2 : CustomerType.values()) {
-                if (customerTypeNum == ct2.ordinal()) {
-                    ct = ct2; // "ゴールド顧客"の列挙子が決まる
+            for (CustomerType ct2 : CustomerType.values()) { //【1】
+                if (customerTypeNum == ct2.ordinal()) { //【2】
+                    ct = ct2; // ゴールド会員の列挙子が決まる
                     break;
                 }
             }

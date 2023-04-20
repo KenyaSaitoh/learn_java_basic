@@ -4,15 +4,15 @@ public class Main {
     public static void main(String[] args) {
         {
             System.out.println("***** snippet_1 *****");
-            String str = "foo";
-            str = "bar"; // 新しいインスタンスが生成される（書き変わるわけではない）
+            String str = "foo"; //【1】
+            str = "bar"; //【2】新しいインスタンスが生成される（書き変わるわけではない）
             System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_2 *****");
             String str1 = "foo";
-            String str2 = str1;
-            str2 = "bar"; // str1は書き変わらない
+            String str2 = str1;//【1】
+            str2 = "bar"; //【2】str1は書き変わらない
             System.out.println(str1);
             System.out.println("=> end");
         }

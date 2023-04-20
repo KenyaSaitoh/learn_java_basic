@@ -1,5 +1,5 @@
 class CalcForVariableParams {
-    int add(int... params) {
+    int add(int... params) { //【1】
         int sum = 0;
         for (int i = 0; i < params.length; i++) {
             sum += params[i];

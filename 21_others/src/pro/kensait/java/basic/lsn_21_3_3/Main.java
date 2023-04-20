@@ -35,8 +35,8 @@ public class Main {
         }
         {
             System.out.println("***** snippet_4 *****");
-            Locale locale = new Locale("en", "US");
-            ResourceBundle rb = ResourceBundle.getBundle("MyResource", locale);
+            Locale locale = new Locale("en", "US"); //【1】
+            ResourceBundle rb = ResourceBundle.getBundle("MyResource", locale); //【2】
             String name = rb.getString("name");
             int age = Integer.parseInt(rb.getString("age"));
             String address = rb.getString("address");
@@ -45,12 +45,12 @@ public class Main {
         }
         {
             System.out.println("***** snippet_5 *****");
-            NumberFormat nf1 = NumberFormat.getCurrencyInstance();
-            NumberFormat nf2 = NumberFormat.getCurrencyInstance(Locale.US);
-            NumberFormat nf3 = NumberFormat.getCurrencyInstance(Locale.UK);
-            String str1 = nf1.format(10000);
-            String str2 = nf2.format(10000);
-            String str3 = nf3.format(10000);
+            NumberFormat nf1 = NumberFormat.getCurrencyInstance(); //【1】
+            NumberFormat nf2 = NumberFormat.getCurrencyInstance(Locale.US); //【2】
+            NumberFormat nf3 = NumberFormat.getCurrencyInstance(Locale.UK); //【3】
+            String str1 = nf1.format(10000); // "¥10,000"
+            String str2 = nf2.format(10000); // "$10,000.00"
+            String str3 = nf3.format(10000); // "£10,000.00"
             System.out.println(str1);
             System.out.println(str2);
             System.out.println(str3);

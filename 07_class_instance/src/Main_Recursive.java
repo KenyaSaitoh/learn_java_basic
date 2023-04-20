@@ -7,7 +7,7 @@ public class Main_Recursive {
 
     static int calcSum(int[] array, int i) {
         if (i < array.length) {
-            return array[i] + calcSum(array, ++i);
+            return array[i] + calcSum(array, ++i); //【1】
         } else {
             return 0;
         }

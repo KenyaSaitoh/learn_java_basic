@@ -8,9 +8,9 @@ public class Main {
         {
             System.out.println("***** snippet_1 *****");
             Calendar cal = Calendar.getInstance();
-            cal.set(1997, 3, 10); // 1997年4月10日
-            Date birthday = cal.getTime();
-            Person alice = new Person("Alice", 25, birthday);
+            cal.set(1997, 3, 10); //【1】1997年4月10日
+            Date birthday = cal.getTime(); //【2】
+            Person alice = new Person("Alice", 25, birthday); //【3】
             System.out.println(alice);
             System.out.println("=> end");
         }

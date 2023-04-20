@@ -6,7 +6,7 @@ public class Main_Switch_1 {
         System.out.print("customerType? (0:GENERAL, 1:GOLD, 2:PLATINUM, 3:DIAMOND) => ");
         int customerType = Integer.parseInt(new Scanner(System.in).nextLine());
 
-        int deliveryFee = 0;
+        int deliveryFee = 0; //【1】
         switch (customerType) { // int型変数
         case 0, 1: // 一般会員またはゴールド会員を表すラベル
             deliveryFee = 900;

@@ -10,7 +10,7 @@ public class Main_Replace_1 {
             String before = "FooCompany";
             Pattern pattern = Pattern.compile("[a-z]");
             Matcher matcher = pattern.matcher(before);
-            String after = matcher.replaceAll("x");
+            String after = matcher.replaceAll("x"); //【1】
             System.out.println(before + " => " + after);
             System.out.println("=> end");
         }

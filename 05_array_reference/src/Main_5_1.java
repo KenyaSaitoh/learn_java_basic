@@ -68,8 +68,8 @@ public class Main_5_1 {
         {
             System.out.println("***** snippet_12 *****");
             int[][] scoreTable = {{80, 90, 100, 85}, {75, 70, 75, 60}, {95, 65, 75, 90}};
-            int length1 = scoreTable.length;
-            int length2 = scoreTable[0].length;
+            int length1 = scoreTable.length; //【1】
+            int length2 = scoreTable[0].length; //【2】
             System.out.println("=> end");
         }
     }

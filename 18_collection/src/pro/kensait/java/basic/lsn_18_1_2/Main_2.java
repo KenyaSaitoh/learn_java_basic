@@ -12,7 +12,7 @@ public class Main_2 {
             for (int i = 0; i < 10; i++) {
                 list.add(i + 1);
             }
-            List<Integer> subList = list.subList(3, 7);
+            List<Integer> subList = list.subList(3, 7); //【1】サブリストを作る
             System.out.println(subList);
             System.out.println("=> end");
         }

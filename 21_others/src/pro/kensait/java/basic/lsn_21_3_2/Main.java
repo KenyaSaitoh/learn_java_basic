@@ -10,22 +10,22 @@ public class Main {
     public static void main(String[] args) throws Exception {
         {
             System.out.println("***** snippet_1 *****");
-            Properties props = new Properties();
+            Properties props = new Properties(); //【1】
             props.load(Files.newBufferedReader(
                     Paths.get(System.getProperty("user.home"), "MyResource.properties"),
-                    StandardCharsets.UTF_8));
-            String name = props.getProperty("name");
-            int age = Integer.parseInt(props.getProperty("age"));
-            String address = props.getProperty("address");
+                    StandardCharsets.UTF_8)); //【2】
+            String name = props.getProperty("name"); //【3】
+            int age = Integer.parseInt(props.getProperty("age")); //【4】
+            String address = props.getProperty("address"); //【5】
             System.out.println(name + ", " + age + ", " + address);
             System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_2 *****");
-            ResourceBundle rb = ResourceBundle.getBundle("MyResource");
-            String name = rb.getString("name");
-            int age = Integer.parseInt(rb.getString("age"));
-            String address = rb.getString("address");
+            ResourceBundle rb = ResourceBundle.getBundle("MyResource"); //【1】
+            String name = rb.getString("name"); //【2】
+            int age = Integer.parseInt(rb.getString("age")); //【3】
+            String address = rb.getString("address"); //【4】
             System.out.println(name + ", " + age + ", " + address);
             System.out.println("=> end");
         }

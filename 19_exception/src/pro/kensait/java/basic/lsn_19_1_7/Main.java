@@ -13,7 +13,7 @@ public class Main {
             int length = foo.process(param);
             System.out.println(length); 
         } catch(IllegalArgumentException iae) {
-            iae.printStackTrace();
+            iae.printStackTrace(); //【1】
         }
     }
 }

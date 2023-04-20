@@ -10,10 +10,11 @@ public class Main {
 
         Foo foo = new Foo();
         try {
-            int length = foo.process(param); //［1］
-            System.out.println(length); //［2］ 
+            int length = foo.process(param); //【1】
+            System.out.println(length);
         } catch (BusinessException be) {
             be.printStackTrace();
+            //【2】このように根本例外を取り出すことも可能
             Throwable t = be.getCause();
             t.printStackTrace();
         }

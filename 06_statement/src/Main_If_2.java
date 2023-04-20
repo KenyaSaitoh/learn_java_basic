@@ -6,10 +6,10 @@ public class Main_If_2 {
         System.out.print("totalPrice? => ");
         int totalPrice = Integer.parseInt(new Scanner(System.in).nextLine());
 
-        int deliveryFee;
-        if (10000 <= totalPrice) {
+        int deliveryFee; // 配送料
+        if (10000 <= totalPrice) { //【1】
             deliveryFee = 300;
-        } else if (5000 <= totalPrice) {
+        } else if (5000 <= totalPrice) { //【2】
             deliveryFee = 600;
         } else {
             deliveryFee = 900;

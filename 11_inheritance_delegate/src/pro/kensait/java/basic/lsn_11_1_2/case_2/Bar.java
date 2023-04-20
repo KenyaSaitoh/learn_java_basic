@@ -11,7 +11,7 @@ public class Bar extends Foo {
 	}
 	@Override
 	public int add() { // オーバーライド
-		int tmp = super.add();
-		return tmp + y; // 140
+	    int tmp = super.add(); //【1】
+	    return tmp + y; //【2】
 	}
 }
