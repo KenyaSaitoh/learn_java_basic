@@ -9,12 +9,12 @@ public class PersonDBSearcher {
         return person;
     }
 
-    public Optional<Person> find2(String name) { //【1】
+    public Optional<Person> find2(String name) { //【3】
         Person person = personDB.get(name);
         if (person == null) {
-            return Optional.empty(); //【2】
+            return Optional.empty(); //【4】
         }
-        return Optional.of(person); //【3】
+        return Optional.of(person); //【5】
     }
 
     public Optional<Person> find3(String name) {

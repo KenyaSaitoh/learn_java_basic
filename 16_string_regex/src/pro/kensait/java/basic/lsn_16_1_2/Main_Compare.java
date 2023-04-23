@@ -13,7 +13,7 @@ public class Main_Compare {
         {
             System.out.println("***** snippet_2 *****");
             String str1 = "foo";
-            String str2 = "Foobar";
+            String str2 = "bar";
             int result = str1.compareTo(str2);
             System.out.println(0 < result);
             System.out.println("=> end");
@@ -21,9 +21,9 @@ public class Main_Compare {
         {
             System.out.println("***** snippet_3 *****");
             String str1 = "foo";
-            String str2 = "Foobar";
-            int result = str1.compareToIgnoreCase(str2);
-            System.out.println(result < 0);
+            String str2 = "Foo";
+            int result = str1.compareToIgnoreCase(str2); // 0
+            System.out.println(0 == result);
             System.out.println("=> end");
         }
     }
