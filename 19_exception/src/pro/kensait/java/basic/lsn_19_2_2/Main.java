@@ -14,7 +14,7 @@ public class Main {
             System.out.println(length);
         } catch (BusinessException be) {
             be.printStackTrace();
-            //【2】このように根本例外を取り出すことも可能
+            //【2】このように根本原因を取り出すことも可能
             Throwable t = be.getCause();
             t.printStackTrace();
         }
