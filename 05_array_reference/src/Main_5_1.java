@@ -39,13 +39,13 @@ public class Main_5_1 {
         {
             System.out.println("***** snippet_7 *****");
             int[] scores = {650, 570, 700};
-            System.out.println(scores.length);
+            int lgh = scores.length; // 3
             System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_8 *****");
             int[] scores = {650, 570, 700};
-            System.out.println(scores[3]);
+            int x = scores[3];
             System.out.println("=> end");
         }
         {
@@ -68,8 +68,8 @@ public class Main_5_1 {
         {
             System.out.println("***** snippet_12 *****");
             int[][] scoreTable = {{80, 90, 100, 85}, {75, 70, 75, 60}, {95, 65, 75, 90}};
-            int length1 = scoreTable.length; //【1】
-            int length2 = scoreTable[0].length; //【2】
+            int lgt1 = scoreTable.length; //【1】
+            int lgt2 = scoreTable[0].length; //【2】
             System.out.println("=> end");
         }
     }
