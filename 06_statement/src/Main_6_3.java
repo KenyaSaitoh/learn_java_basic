@@ -100,13 +100,5 @@ public class Main_6_3 {
             }
             System.out.println("=> end");
         }
-        {
-            System.out.println("***** snippet_11 *****");
-            boolean flag = true;
-            while (flag) {
-                // 繰り返される
-            }
-            System.out.println("=> end");
-        }
     }
 }
