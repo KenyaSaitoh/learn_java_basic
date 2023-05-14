@@ -8,11 +8,11 @@ public class Main_2 {
     public static void main(String[] args) {
         {
             System.out.println("***** snippet_1 *****");
-            List<Integer> list = new ArrayList<Integer>(); // 1から10までの数値が格納されたリストを作る
+            List<Integer> list = new ArrayList<Integer>();
             for (int i = 0; i < 10; i++) {
-                list.add(i + 1);
+                list.add(i + 1); // 【1】1から10までの数値が格納されたリストを作る
             }
-            List<Integer> subList = list.subList(3, 7); //【1】サブリストを作る
+            List<Integer> subList = list.subList(3, 7); //【2】サブリストを作る
             System.out.println(subList);
             System.out.println("=> end");
         }
@@ -24,7 +24,7 @@ public class Main_2 {
             List<String> list2 = new ArrayList<>();
             list2.add("baz");
             list2.add("qux");
-            list1.addAll(list2);
+            list1.addAll(list2); //【1】
             System.out.println(list1);
             System.out.println("=> end");
         }
@@ -77,6 +77,16 @@ public class Main_2 {
             String[] strArray = {"foo", "bar", "baz"};
             List<String> list = Arrays.asList(strArray);
             System.out.println(list);
+            System.out.println("=> end");
+        }
+        {
+            System.out.println("***** snippet_10 *****");
+            List<Person> personList = new ArrayList<>(); //【1】
+            Person alice = new Person("Alice", 25, "female");
+            Person bob = new Person("Bob", 35, "male");
+            personList.add(alice);
+            personList.add(bob);
+            System.out.println(personList);
             System.out.println("=> end");
         }
     }

@@ -29,10 +29,10 @@ public class Main_1 {
         }
         {
             System.out.println("***** snippet_5 *****");
-            List<String> list = new ArrayList<>();
-            list.add("foo");
-            list.add("bar");
-            list.add("baz");
+            List<String> list = new ArrayList<>(); //【1】
+            list.add("foo"); //【2】
+            list.add("bar"); //【3】
+            list.add("baz"); //【4】
             System.out.println(list);
             System.out.println("=> end");
         }

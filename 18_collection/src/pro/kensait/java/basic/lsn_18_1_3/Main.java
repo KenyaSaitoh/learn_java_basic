@@ -15,23 +15,23 @@ public class Main {
         }
         {
             System.out.println("***** snippet_2 *****");
-            Set<String> set = new HashSet<>();
-            set.add("foo");
-            set.add("bar");
-            set.add("baz");
+            Set<String> set = new HashSet<>(); //【1】
+            set.add("foo"); //【2】
+            set.add("bar"); //【3】
+            set.add("baz"); //【4】
             System.out.println(set);
             System.out.println("=> end");
         }
         {
             System.out.println("***** snippet_3 *****");
+            Set<Person> personSet = new HashSet<>();
             Person alice = new Person("Alice", 25, "female");
             Person bob = new Person("Bob", 35, "male");
-            Set<Person> set = new HashSet<>();
-            set.add(alice);
-            set.add(bob);
+            personSet.add(alice);
+            personSet.add(bob);
             Person alice2 = new Person("Alice", 26, "female");
-            set.add(alice2); // どうなる？
-            System.out.println(set);
+            personSet.add(alice2); // どうなる？
+            System.out.println(personSet);
             System.out.println("=> end");
         }
         {
