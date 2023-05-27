@@ -15,7 +15,7 @@ public class Main_2 {
         }
         {
             System.out.println("***** snippet_2 *****");
-            BigDecimal val1 = BigDecimal.valueOf(123.45675);
+            BigDecimal val1 = BigDecimal.valueOf(123.4567);
             BigDecimal val2 = val1.setScale(3, RoundingMode.HALF_UP); // 123.457
             System.out.println(val2);
             System.out.println("=> end");
