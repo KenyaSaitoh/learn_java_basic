@@ -24,6 +24,6 @@ public class PersonDBSearcher {
 
     private static Map<String, Person> personDB = //【2】
             Map.of("Alice", new Person("Alice", 25, "female"),
-                    "Bab", new Person("Bob", 35, "male"),
+                    "Bob", new Person("Bob", 35, "male"),
                     "Carol", new Person("Carol", 25, "female"));
 }

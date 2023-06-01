@@ -83,10 +83,4 @@ class Person3 {
         }
         return message;
     }
-
-    @Override
-    public String toString() {
-        return "Person3 [name=" + name + ", age=" + age + ", nationality=" + nationality
-                + ", email=" + email + "]";
-    }
 }
