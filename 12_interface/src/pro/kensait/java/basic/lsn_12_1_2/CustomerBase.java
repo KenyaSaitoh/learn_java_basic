@@ -63,4 +63,10 @@ public abstract class CustomerBase {
 
     // ポイントを加算する（抽象メソッド）
     public abstract void addPoint(int value);
+
+    @Override
+    public String toString() {
+        return "CustomerBase [id=" + id + ", name=" + name + ", address=" + address
+                + ", point=" + point + ", invalid=" + invalid + "]";
+    }
 }

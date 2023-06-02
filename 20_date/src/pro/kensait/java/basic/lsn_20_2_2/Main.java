@@ -36,7 +36,7 @@ public class Main {
         }
         {
             System.out.println("***** snippet_5 *****");
-            LocalDateTime now = LocalDateTime.now();
+            LocalDateTime now = LocalDateTime.of(2022, 11, 5, 0, 0);
             LocalDateTime date = now.minusYears(5).plusMonths(1).withDayOfMonth(10);
             if (date.getDayOfWeek() == DayOfWeek.SUNDAY) {
                 System.out.println("The day is SUNDAY");
