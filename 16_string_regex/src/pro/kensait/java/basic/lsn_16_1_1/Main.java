@@ -18,9 +18,9 @@ public class Main {
         }
         {
             System.out.println("***** snippet_3 *****");
-            String str1 = "foo";
-            String str2 = "foo";
-            boolean flag = str1 == str2;
+            String str1 = "foo"; //【1】
+            String str2 = "foo"; //【2】
+            boolean flag = str1 == str2; //【3】どうなる？
             System.out.println(flag);
             System.out.println("=> end");
         }
