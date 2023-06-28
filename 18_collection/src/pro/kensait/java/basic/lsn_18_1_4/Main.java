@@ -101,8 +101,9 @@ public class Main {
             map.put(101, "Alice");
             map.put(102, "Bob");
             map.put(103, "Carol");
-            boolean flag = map.remove(101, "Alice");
+            String value = map.remove(101);
             System.out.println(map);
+            System.out.println(value);
             System.out.println("=> end");
         }
         {
